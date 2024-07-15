@@ -116,16 +116,15 @@ function mostrarCarrito() {
 function realizarCompra() {
     const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
     if (carrito.length === 0) {
-        alert('El carrito está vacío.');
+        alert('El carrito esta vacío.');
         return;
     }
     const total = carrito.reduce((sum, producto) => sum + producto.precio, 0);
-    alert(`Compra realizada correctamente por un total de $${total}.`);
+    alert(`Compra realizada por un total de $${total}.`);
     localStorage.removeItem('carrito');
     mostrarCarrito();
 }
 
-// Mostrar productos al cargar la página
 mostrarProductos();
 if (sessionStorage.getItem('usuarioActual')) {
     mostrarCarrito();
