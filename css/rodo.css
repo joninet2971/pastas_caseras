@@ -1,0 +1,25 @@
+:root{
+    --color-one: #1d1a39;
+    --color-two: #451952;
+    --color-three: #662549;
+    --color-four: #ae445a;
+    --color-five: #f39f5a;
+    --color-six: #e8bcb9;
+}
+
+/* Larger than mobile screen */
+@media (min-width: 40.0rem) { 
+
+}
+
+/* Larger than tablet screen */
+@media (min-width: 80.0rem) { 
+
+}
+
+/* Larger than desktop screen */
+@media (min-width: 120.0rem) { 
+   
+}
+    
+
