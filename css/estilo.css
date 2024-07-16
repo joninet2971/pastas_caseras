@@ -1,0 +1,21 @@
+:root{
+    --color-one: #1d1a39;
+    --color-two: #451952;
+    --color-three: #662549;
+    --color-four: #ae445a;
+    --color-five: #f39f5a;
+    --color-six: #e8bcb9;
+}
+
+.column{
+    border: solid black; /* esta linea despues la sacamos, solo marcar los limites de cada uno */
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.contenedora {
+    width: 100%; /* 100% del ancho de la ventana */
+}
