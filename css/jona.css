@@ -152,19 +152,19 @@
 
 /* Media query para pantallas más pequeñas */
 @media (max-width: 1024px) {
-    .productos .row {
+    .productos-destacados-ofertas .productos .row {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (max-width: 768px) {
-    .productos .row {
+    .productos-destacados-ofertas .productos .row {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 480px) {
-    .productos .row {
+    .productos-destacados-ofertas .productos .row {
         grid-template-columns: 1fr;
     }
 }
