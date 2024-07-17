@@ -1,4 +1,7 @@
-:root{
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Definir las nuevas variables de color */
+:root {
     --color-one: #1d1a39;
     --color-two: #451952;
     --color-three: #662549;
@@ -7,17 +10,145 @@
     --color-six: #e8bcb9;
 }
 
-/* Larger than mobile screen */
-@media (min-width: 40.0rem) { 
-
+.productos-destacados-ofertas .productos {
+    padding: 40px;
 }
 
-/* Larger than tablet screen */
-@media (min-width: 80.0rem) { 
-
+.productos-destacados-ofertas .productos h3 {
+    font-family: "Montserrat", sans-serif;
 }
 
-/* Larger than desktop screen */
-@media (min-width: 120.0rem) { 
-   
+.productos-destacados-ofertas .productos p {
+    font-family: "Montserrat", sans-serif;
+}
+
+.productos-destacados-ofertas .productos .row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.productos-destacados-ofertas .productos .column {
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e9e9e9;
+    padding: 0;
+    overflow: hidden;
+    min-width: 0;
+}
+
+.productos-destacados-ofertas .productos .column img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin: 0;
+}
+
+.productos-destacados-ofertas .productos .column h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.productos-destacados-ofertas .productos .column p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+.productos-destacados-ofertas .productos .column .contenedor-botones {
+    display: flex;
+    width: 100%;
+}
+
+.productos-destacados-ofertas .productos .column .boton, .productos .column .boton-detalle {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 5px;
+    color: white;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    height: 30px;
+    border-radius: 0;
+    margin: 0;
+    width: auto;
+}
+
+.productos-destacados-ofertas .productos .column .boton {
+    background-color: var(--color-five);
+}
+
+.productos-destacados-ofertas .productos .column .boton-detalle {
+    background-color: var(--color-four);
+}
+
+.productos-destacados-ofertas .productos .column .boton:hover {
+    background-color: var(--color-four);
+}
+
+.productos-destacados-ofertas .productos .column .boton-detalle:hover {
+    background-color: var(--color-five);
+}
+
+/* Estilos para la tarjeta "Ver Todos los Productos" */
+.productos-destacados-ofertas .productos .ver-todos-column {
+    background-color: var(--color-one);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.productos-destacados-ofertas .productos .ver-todos-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.productos-destacados-ofertas .productos .ver-todos-column p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    padding: 0 10px;
+}
+
+.productos-destacados-ofertas .productos .ver-todos-column .boton-ver-todos {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: var(--color-five);
+    color: var(--color-one);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.productos-destacados-ofertas .productos .ver-todos-column .boton-ver-todos:hover {
+    background-color: var(--color-six);
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 1024px) {
+    .productos .row {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .productos .row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .productos .row {
+        grid-template-columns: 1fr;
+    }
 }
