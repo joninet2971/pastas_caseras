@@ -36,6 +36,11 @@
     padding: 0;
     overflow: hidden;
     min-width: 0;
+    transition: all 0.3s ease; /* Agregamos transición para suavizar los efectos */
+}
+.productos-destacados-ofertas .productos .column:hover {
+    transform: translateY(-5px); /* Efecto de elevación */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
 }
 
 .productos-destacados-ofertas .productos .column img {
@@ -43,6 +48,10 @@
     height: 150px;
     object-fit: cover;
     margin: 0;
+    transition: transform 0.3s ease; /* Transición para la imagen */
+}
+.productos-destacados-ofertas .productos .column:hover img {
+    transform: scale(1.05); /* Ligero zoom en la imagen */
 }
 
 .productos-destacados-ofertas .productos .column h3 {
@@ -106,6 +115,13 @@
     justify-content: center;
     text-align: center;
     padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.productos-destacados-ofertas .productos .ver-todos-column:hover {
+    background-color: var(--color-two); /* Cambio de color al pasar el mouse */
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .productos-destacados-ofertas .productos .ver-todos-column h3 {
@@ -127,11 +143,12 @@
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .productos-destacados-ofertas .productos .ver-todos-column .boton-ver-todos:hover {
     background-color: var(--color-six);
+    transform: scale(1.05); /* Ligero aumento de tamaño */
 }
 
 /* Media query para pantallas más pequeñas */
