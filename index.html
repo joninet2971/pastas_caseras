@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/rodo.css">
     <link rel="stylesheet" href="css/nico.css">
@@ -17,27 +18,40 @@
     <div class="contenedora">
         <!-- navbar de octavio -->
         <header class="row navbar">
-            <nav class="navbar-main">
-                <a class="navbar-logo">
-                    <img src="img/pastalogo.png" alt="logo" width="50px">
-                </a>
-                <button class="menu-toggle">☰</button>
-                <div class="navbar-content">
-                    <ul class="navbar-menu navbar-menu-left">
-                        <li><a href="menu.html">Inicio</a></li>
-                        <li><a href="nosotros.html">Nosotros</a></li>
-                        <li><a href="productos.html">Productos</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
+            <div class="column column-60">
+                <nav class="navbar">
+                    <div class="logo">
+                        <img src="img/pastalogo.png" alt="Logo">
+                    </div>
+                    <button class="menu-toggle" id="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <ul class="menu" id="menu">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Productos</a></li>
+                        <li><a href="#">Promos</a></li>
+                        <li><a href="#">Contacto</a></li>
                     </ul>
-                    <ul class="navbar-menu navbar-menu-right">
-                        <li><a href="inicio_de_secion.html"><i class="fas fa-sign-in-alt"></i> Iniciar Sesión</a></li>
-                        <li><a href="registro.html"><i class="fas fa-user-plus"></i> Crear Cuenta</a></li>
-                        <li><a href="#"><i class="fas fa-shopping-cart"></i> 0 - $0,00</a></li>
-                    </ul>
-                </div>
-            </nav>
+                </nav>
+            </div>
+            <div class="column">
+                <nav class="navbar-titulo">
+                    <div class="nav-item">
+                        <i class="fas fa-user-plus"></i>
+                        <a href="#">Crear Cuenta</a>
+                    </div>
+                    <div class="nav-item">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <a href="#">Iniciar Sesión</a>
+                    </div>
+                    <div class="nav-item">
+                        <i class="fas fa-shopping-cart"></i>
+                        <a href="#">0 - $0,00</a>
+                    </div>
+                </nav>
+            </div>
         </header>
-
         <main class="row principal">
             <div class="column">main nico</div>
         </main>
@@ -58,7 +72,7 @@
                               <span class="icono">Detalles</span>
                             </button>
                         </div>
-                    </div>                
+                    </div>
                     <div class="column">
                         <img src="img/productos/noquis.jpg" alt="img">
                         <h3>Ñoquis</h3>
@@ -69,8 +83,7 @@
                             </button>
                             <button class="boton-detalle">
                               <span class="icono">Detalles</span>
-                            </button>
-                        </div>
+                            </div>
                     </div>
                     <div class="column">
                         <img src="img/productos/ravioles.jpg" alt="img">
@@ -114,41 +127,38 @@
         </div>
 
         <!-- footer octavio -->
-        <footer class="footer-main row">
+        <footer class="footer">
             <div class="footer-container">
-                <div class="footer-content">
-                    <div class="footer-section">
-                        <img src="img/pastalogo.png" alt="El Rincon del Sorrentino" class="footer-logo">
-                    </div>
-                    <div class="footer-section">
-                        <h3>Pastas Artesanales</h3>
-                        <p>Calidad y prestigio desde 1943.<br>Gracias por su visita</p>
-                    </div>
-                    <div class="footer-section">
-                        <h3>Visítanos</h3>
-                        <p>Av. Alberdi 1051<br>Río Cuarto / Cordoba / Argentina</p>
-                    </div>
-                    <div class="footer-section">
-                        <h3>Comunícate</h3>
-                        <p>(0358)-4249046<br>info@elrincondelsorrentino.com.ar</p>
-                    </div>
-                </div>    
-                    <div class="footer-bottom">
-                        <p>© 2024 - El Rincon del Sorrentino</p>
-                    </div>    
+                <div class="footer-section">
+                    <img src="img/pastalogo.png" alt="El Rincon del Sorrentino" class="footer-logo">
+                </div>
+                <div class="footer-section">
+                    <h3>Pastas Artesanales</h3>
+                    <p>Calidad y prestigio desde 1943...<br>Gracias por su visita</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Visítanos</h3>
+                    <p>Av. Alberdi 1051<br>Río Cuarto / Córdoba / Argentina</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Comunícate</h3>
+                    <p>(0358) 4249046<br>info@elrincondelsorrentino.com.ar</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 - El Rincón del Sorrentino</p>
             </div>
         </footer>
-    </div>   
-</body>
-
+    </div>
     <script>
-       document.addEventListener('DOMContentLoaded', () => {
-            const toggleButton = document.querySelector('.menu-toggle');
-            const navbarMenu = document.querySelector('.navbar-menu');
-
-            toggleButton.addEventListener('click', () => {
-                navbarMenu.classList.toggle('active');
-            });
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            var menu = document.getElementById('menu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
         });
-    </script> 
+    </script>
+</body>
 </html>
