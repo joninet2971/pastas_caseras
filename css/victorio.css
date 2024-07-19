@@ -31,7 +31,7 @@ header {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start; /* Asegura que el contenido esté alineado a la izquierda */
     align-items: center;
     padding: 10px 20px; 
     font-family: 'Montserrat', sans-serif;
@@ -42,6 +42,7 @@ header {
     margin: 0;
     padding: 0;
     list-style: none;
+    flex-grow: 1; /* Esto permitirá que el menú ocupe todo el espacio posible */
 }
 
 .menu li {
