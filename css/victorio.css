@@ -1,23 +1,219 @@
-:root{
-    --color-one: #1d1a39;
-    --color-two: #451952;
-    --color-three: #662549;
-    --color-four: #ae445a;
-    --color-five: #f39f5a;
-    --color-six: #e8bcb9;
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Definición de Variables CSS para Colores */
+:root {
+    --color-one: #1d1a39;  /* Color oscuro, usado para fondos y texto */
+    --color-two: #451952;  /* Color púrpura oscuro */
+    --color-three: #662549;  /* Color púrpura medio */
+    --color-four: #ae445a;  /* Color rojo oscuro */
+    --color-five: #f39f5a;  /* Color naranja claro, usado para fondos */
+    --color-six: #e8bcb9;  /* Color claro, usado para texto */
 }
 
-/* Larger than mobile screen */
-@media (min-width: 40.0rem) { 
-
+/* Estilos para la barra de navegación */
+.navbar-main {
+    background-color: var(--color-five);  /* Fondo de la navbar */
+    position: fixed;  /* Navbar fija en la parte superior */
+    width: 100%;  /* Ancho completo de la pantalla */
+    display: flex;  /* Usar flexbox para disposición */
+    justify-content: space-between;  /* Espaciar elementos equitativamente */
+    align-items: center;  /* Alinear elementos al centro verticalmente */
+    padding: 0 15px;  /* Padding horizontal */
 }
 
-/* Larger than tablet screen */
-@media (min-width: 80.0rem) { 
-
+/* Estilos para el logo en la navbar */
+.navbar-logo img {
+    padding-top: 0.8rem;  /* Padding superior para el logo */
+    max-height: 50px;  /* Altura máxima para el logo */
 }
 
-/* Larger than desktop screen */
-@media (min-width: 120.0rem) { 
-   
+/* Estilos para el botón de alternancia del menú */
+.menu-toggle {
+    display: none;  /* Ocultar el botón por defecto */
+    background: none;  /* Sin fondo */
+    border: none;  /* Sin borde */
+    font-size: 1.5rem;  /* Tamaño de fuente grande */
+    color: var(--color-six);  /* Color del ícono del botón */
+    cursor: pointer;  /* Cambia el cursor al puntero */
+    padding: 10px;  /* Padding del botón */
+}
+
+/* Estilos para el ícono del botón de alternancia del menú */
+.menu-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(232, 188, 185, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");  /* Imagen SVG del ícono */
+    width: 30px;  /* Ancho del ícono */
+    height: 30px;  /* Altura del ícono */
+    background-repeat: no-repeat;  /* No repetir la imagen de fondo */
+    background-size: 30px 30px;  /* Tamaño del fondo */
+}
+
+/* Contenido del navbar */
+.navbar-content {
+    display: flex;  /* Usar flexbox para disposición */
+    align-items: center;  /* Alinear elementos al centro verticalmente */
+    width: 100%;  /* Ancho completo */
+    justify-content: space-between;  /* Espaciar elementos equitativamente */
+}
+
+/* Estilos para el menú de navegación */
+.navbar-menu {
+    display: flex;  /* Usar flexbox para disposición */
+    align-items: center;  /* Alinear elementos al centro verticalmente */
+    list-style: none;  /* Sin estilo de lista */
+    margin: 0;  /* Sin margen */
+    padding: 0;  /* Sin padding */
+}
+
+/* Estilos para el menú a la izquierda */
+.navbar-menu-left {
+    display: flex;  /* Usar flexbox para disposición */
+    align-items: center;  /* Alinear elementos al centro verticalmente */
+}
+
+/* Estilos para el menú a la derecha */
+.navbar-menu-right {
+    display: flex;  /* Usar flexbox para disposición */
+    align-items: center;  /* Alinear elementos al centro verticalmente */
+}
+
+/* Estilos para los elementos del menú */
+.navbar-menu li {
+    margin: 0 15px;  /* Margen horizontal entre los elementos del menú */
+}
+
+/* Aplica la fuente a todos los elementos del navbar */
+.navbar a {
+    font-family: 'Roboto', sans-serif; /* Fuente personalizada */
+    font-weight: 550; /* Grosor de la fuente */
+    color: var(--color-one); /* Ajusta el color según tu diseño */
+    text-decoration: none; /* Quita el subrayado por defecto */
+    padding: 0 15px; /* Espaciado horizontal */
+    font-size: 1.6rem;  /* Tamaño de la fuente */
+    text-decoration: none;  /* Sin subrayado */
+}
+
+/* Estilos para los enlaces al pasar el ratón */
+.navbar-menu a:hover {
+    color: var(--color-four);  /* Cambiar color al pasar el ratón */
+}
+
+/* Estilos responsivos para la navbar */
+@media (max-width: 40rem) {
+    .navbar-content {
+        flex-direction: column;  /* Cambiar a disposición en columna */
+        align-items: flex-start;  /* Alinear elementos al inicio */
+    }
+
+    .navbar-menu {
+        display: none;  /* Ocultar el menú por defecto */
+        flex-direction: column;  /* Cambiar a disposición en columna */
+        width: 100%;  /* Ancho completo */
+        background-color: var(--color-five);  /* Fondo del menú */
+        border-top: 1px solid var(--color-four);  /* Borde superior */
+        padding: 10px 0;  /* Padding vertical */
+    }
+
+    .navbar-menu.active {
+        display: flex;  /* Mostrar el menú cuando está activo */
+    }
+
+    .navbar-menu li {
+        margin: 10px 0;  /* Margen vertical entre los elementos del menú */
+    }
+
+    .navbar-menu a {
+        font-size: 1.4rem;  /* Reducir tamaño de la fuente */
+    }
+
+    .menu-toggle {
+        display: block;  /* Mostrar el botón de alternancia */
+    }
+}
+
+/* Estilos para pantallas mayores a móviles */
+@media (min-width: 40rem) {
+    .navbar-menu {
+        display: flex;  /* Mostrar el menú */
+        flex-direction: row;  /* Disposición en fila */
+        width: auto;  /* Ancho automático */
+        background-color: transparent;  /* Fondo transparente */
+        border-top: none;  /* Sin borde superior */
+    }
+
+    .menu-toggle {
+        display: none;  /* Ocultar el botón de alternancia */
+    }
+}
+
+/* Estilos para pantallas mayores a tablet */
+@media (min-width: 80rem) {
+    .navbar-menu a {
+        font-size: 1.6rem;  /* Tamaño de fuente estándar */
+    }
+}
+
+/* Estilos para pantallas mayores a escritorio */
+@media (min-width: 120rem) {
+    .navbar-menu a {
+        font-size: 1.8rem;  /* Aumentar tamaño de la fuente */
+    }
+}
+
+/* Estilos para el pie de página */
+.footer-main {
+    background-color: var(--color-one);  /* Fondo del pie de página */
+    color: var(--color-six);  /* Color del texto */
+    padding: 20px 0;  /* Padding vertical */
+    margin-top: 20px;  /* Margen superior */
+    width: 100%;  /* Ancho completo */
+    position: relative;  /* Posición relativa */
+    bottom: 0;  /* Posicionado al fondo */
+}
+.footer-container{
+    width: 100%;
+}
+/* Estilos para el logo del pie de página */
+.footer-logo {
+    max-width: 100px;  /* Ancho máximo del logo */
+}
+
+/* Contenido del pie de página */
+.footer-content {
+    display: flex;  /* Usar flexbox para disposición */
+    justify-content: space-between;  /* Espaciar elementos equitativamente */
+    text-align: center;  /* Texto alineado a la izquierda */
+    margin-bottom: 20px;  /* Margen inferior */
+}
+
+/* Sección del pie de página */
+.footer-section {
+    flex: 1;  /* Flexibilidad de 1 */
+    padding: 0 10px;  /* Padding horizontal */
+    margin-top: 20px;  /* Margen superior */
+}
+
+/* Estilos para el título de la sección del pie de página */
+.footer-section h3 {
+    color: var(--color-five);  /* Color del texto */
+    text-align: center;  /* Texto centrado */
+}
+
+/* Estilos para el párrafo de la sección del pie de página */
+.footer-section p {
+    text-align: center;  /* Texto centrado */
+}
+
+/* Estilos para la parte inferior del pie de página */
+.footer-bottom {
+    text-align: center;  /* Texto centrado */
+    background-color: var(--color-one);  /* Fondo */
+    padding: 8px;  /* Padding */
+}
+
+/* Estilos responsivos para el pie de página */
+@media (max-width: 40rem) {
+    .footer-content {
+        flex-direction: column;  /* Cambiar a disposición en columna */
+        text-align: center;  /* Texto centrado */
+    }
 }
