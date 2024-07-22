@@ -79,6 +79,16 @@
     color: #cccccc;
 }
 
+.boton-conocemas {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    background-color: var(--color-four);
+}
+
+.boton-conocemas:hover {
+    background-color: var(--color-five);
+}
+
 .objetivo{
     font-family: "Montserrat", sans-serif;
     Display: flex;
