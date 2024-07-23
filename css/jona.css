@@ -38,6 +38,7 @@
     min-width: 0;
     transition: all 0.3s ease; 
 }
+
 .productos-destacados-ofertas .productos .column:hover {
     transform: translateY(-5px); 
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
@@ -50,6 +51,7 @@
     margin: 0;
     transition: transform 0.3s ease; 
 }
+
 .productos-destacados-ofertas .productos .column:hover img {
     transform: scale(1.05); 
 }
@@ -69,14 +71,16 @@
 .productos-destacados-ofertas .productos .column .contenedor-botones {
     display: flex;
     width: 100%;
+    align-items: stretch;
+    height: 30px;
 }
 
-.productos-destacados-ofertas .productos .column .boton, .productos .column .boton-detalle {
-    flex: 1;
+.productos-destacados-ofertas .productos .column .boton {
+    flex: 2;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 8px 5px;
+    padding: 0 5px;
     color: white;
     border: none;
     font-family: "Montserrat", sans-serif;
@@ -84,26 +88,46 @@
     cursor: pointer;
     text-decoration: none;
     transition: background-color 0.3s ease;
-    height: 30px;
     border-radius: 0;
     margin: 0;
-    width: auto;
-}
-
-.productos-destacados-ofertas .productos .column .boton {
     background-color: var(--color-five);
-}
-
-.productos-destacados-ofertas .productos .column .boton-detalle {
-    background-color: var(--color-four);
+    height: 100%;
 }
 
 .productos-destacados-ofertas .productos .column .boton:hover {
     background-color: var(--color-four);
 }
 
-.productos-destacados-ofertas .productos .column .boton-detalle:hover {
-    background-color: var(--color-five);
+.productos-destacados-ofertas .productos .column .formulario-cantidad {
+    flex: 1;
+    display: flex;
+    margin: 0;
+    height: 100%;
+}
+
+.productos-destacados-ofertas .productos .column .input-cantidad {
+    width: 100%;
+    padding: 0 5px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    border: 1px solid var(--color-four);
+    background-color: white;
+    color: var(--color-one);
+    text-align: center;
+    -moz-appearance: textfield;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.productos-destacados-ofertas .productos .column .input-cantidad::-webkit-outer-spin-button,
+.productos-destacados-ofertas .productos .column .input-cantidad::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.productos-destacados-ofertas .productos .column .input-cantidad:focus {
+    outline: none;
+    border-color: var(--color-five);
 }
 
 .productos-destacados-ofertas .productos .ver-todos-column {
