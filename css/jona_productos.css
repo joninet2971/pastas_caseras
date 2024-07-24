@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --color-one: #1d1a39;
+    --color-two: #451952;
+    --color-three: #662549;
+    --color-four: #ae445a;
+    --color-five: #f39f5a;
+    --color-six: #e8bcb9;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--color-six);
+    margin: 0;
+    padding: 0;
+}
+
+.titulo-productos {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    color: var(--color-one);
+    text-align: center;
+    margin: 20px 0;
+}
+
+.productos-container {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.producto-card {
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e9e9e9;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease; 
+}
+
+.producto-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.producto-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease; 
+}
+
+.producto-card:hover img {
+    transform: scale(1.05); 
+}
+
+.producto-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: var(--color-one);
+}
+
+.producto-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    color: var(--color-two);
+}
+
+.producto-card .contenedor-botones {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    border-top: 1px solid #e9e9e9;
+}
+
+.producto-card .boton {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    background-color: var(--color-five);
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.producto-card .boton:hover {
+    background-color: var(--color-four);
+}
+
+.producto-card .formulario-cantidad {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.producto-card .input-cantidad {
+    width: 50px;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid var(--color-four);
+    background-color: white;
+    color: var(--color-one);
+    text-align: center;
+}
+
+.producto-card .input-cantidad::-webkit-outer-spin-button,
+.producto-card .input-cantidad::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.producto-card .input-cantidad:focus {
+    outline: none;
+    border-color: var(--color-five);
+}
+
+@media (max-width: 1024px) {
+    .productos-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .productos-container {
+        grid-template-columns: 1fr;
+    }
+}

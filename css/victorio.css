@@ -27,14 +27,13 @@ header {
 .logo img {
     width: 50px;
     height: auto;
-    margin-right: 30px;
 }
 
 .navbar {
     display: flex;
     justify-content: flex-start; /* Asegura que el contenido esté alineado a la izquierda */
     align-items: center;
-    padding: 10px 7px; 
+    padding: 10px 20px; 
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -161,7 +160,7 @@ header {
 
 .footer-bottom p {
     margin: 0;
-    font-size: 18px;
+    font-size: 12px;
 }
 
 .footer-section h3,
@@ -171,19 +170,6 @@ header {
 
 .footer-section h3:hover,
 .footer-section p:hover {
-    color: var(--color-five);
-}
-
-.footer-section a {
-    color: var(--color-six);
-    text-decoration: none;
-    margin: 0 3px;
-    display: inline-block;
-    font-size: 24px;
-    transition: color 0.3s ease;
-}
-
-.footer-section a:hover {
     color: var(--color-five);
 }
 
