@@ -9,21 +9,13 @@
     --color-five: #f39f5a;
     --color-six: #e8bcb9;
 }
-.full-width {
-    width: 100%;
-    margin: 0 auto; 
-    padding-top: 20px;
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-}
-
 
 .productos-destacados-ofertas .productos {
     display: flex;
     justify-content: center; 
     flex-wrap: wrap; 
     gap: 20px;
+    padding: 5%;
 }
 
 .productos-destacados-ofertas .productos h3 {
@@ -41,7 +33,7 @@
 
 .productos-destacados-ofertas .productos .row {
     display: grid;
-    grid-template-columns: repeat(2, 3fr);
+    grid-template-columns: repeat(3, 3fr);
     padding: 20px;
     gap: 20px;
 }
@@ -144,7 +136,6 @@
     box-sizing: border-box;
 }
 
-.productos-destacados-ofertas .productos .column .input-cantidad::-webkit-outer-spin-button,
 .productos-destacados-ofertas .productos .column .input-cantidad::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
@@ -153,50 +144,6 @@
 .productos-destacados-ofertas .productos .column .input-cantidad:focus {
     outline: none;
     border-color: var(--color-five);
-}
-
-.productos-destacados-ofertas .productos .ver-todos-column {
-    background-color: var(--color-one);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-    transition: all 0.3s ease;
-}
-
-.productos-destacados-ofertas .productos .ver-todos-column:hover {
-    background-color: var(--color-two); 
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.productos-destacados-ofertas .productos .ver-todos-column h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.productos-destacados-ofertas .productos .ver-todos-column p {
-    font-size: 14px;
-    margin-bottom: 15px;
-    padding: 0 10px;
-}
-
-.productos-destacados-ofertas .productos .ver-todos-column .boton-ver-todos {
-    display: inline-block;
-    padding: 8px 15px;
-    background-color: var(--color-five);
-    color: var(--color-one);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 14px;
-    transition: all 0.3s ease;
-}
-
-.productos-destacados-ofertas .productos .ver-todos-column .boton-ver-todos:hover {
-    background-color: var(--color-six);
-    transform: scale(1.05); 
 }
 
 /* Media query para pantallas más pequeñas */
@@ -218,13 +165,22 @@
     .productos-destacados-ofertas .productos .row {
         grid-template-columns: 1fr;
         padding: 0;
-        margin: 0; /* Asegúrate de que el margen esté en 0 para evitar espacio extra */
+        margin: 0; 
+        gap: 10px; 
     }
 
-    .productos-destacados-ofertas .productos .column {
-        width: 100%; /* Asegúrate de que cada tarjeta ocupe todo el ancho disponible */
-        box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
-        margin: 0; /* Elimina márgenes laterales para usar el ancho completo */
+    .productos-destacados-ofertas .productos .column{
+        width: 100%; 
+        box-sizing: border-box; 
+        margin: 0; 
+    }
+
+    .productos-destacados-ofertas .productos .ver-todos-column{
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
     }
 }
+
+
 
