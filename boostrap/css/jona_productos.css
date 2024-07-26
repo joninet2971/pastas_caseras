@@ -58,42 +58,15 @@
     color: white; 
 }
 .tarjeta .btn {
-    background-color: var(--color-two);
+    background-color: var(--color-five);
     color: #e9e9e9; 
     border: none;
 }
 
 .tarjeta .btn:hover {
-    background-color: var(--color-three);
-    color: white; 
-}
-
-
-.ver-todos-promos .ver-todos-3 {
-    background-color: var(--color-one);
-    color: white;
-}
-
-.ver-todos-promos .btn {
-    background-color: var(--color-five);
-    color: var(--color-one); 
-    border: none;
-}
-
-.ver-todos-promos .btn:hover {
-    background-color: var(--color-six);
-}
-.tarjeta-promos .btn {
-    background-color: var(--color-five);
-    color: #ffffff; 
-    border: none;
-}
-
-.tarjeta-promos .btn:hover {
     background-color: var(--color-four);
     color: white; 
 }
-
 
 @media (max-width: 768px) {
     .col-lg-3, .col-md-6 {
