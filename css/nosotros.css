@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --color-one: #1d1a39;
+    --color-two: #451952;
+    --color-three: #662549;
+    --color-four: #ae445a;
+    --color-five: #f39f5a;
+    --color-six: #e8bcb9;
+}
+
+.contenedora_carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: var(--color-four);
+}
+.carousel {
+    position: relative;
+    width: 1400px;
+    
+}
+.carousel-icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    background-color: var(--color-six);
+   
+    
+}
+.carousel-icons div {
+    background-color: var(--color-six);
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    box-shadow: 0 2px 16px rgba(88, 0, 0, 0.9); 
+    width: 200px;
+    height: 50px;
+    border-radius: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.carousel-icons div:hover {
+    background-color: var(--color-five);
+}
+.card {
+    display: none;
+    position: relative;
+    margin-bottom: 50px;
+    top: 20px;
+    left: 0;
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    background-color: rgba(252, 232, 197, 0.858);
+    border-radius: 10px;
+    box-shadow: 0 2px 16px rgba(88, 0, 0, 0.9); 
+    padding: 20px;
+}
+.card-pic{
+    display: flex;
+    justify-content: center;
+}
+
+.card.active {
+    display: block;
+}
+
+.card h4 {
+    background-color: var(--color-six);
+    box-shadow: 0 2px 16px rgba(88, 0, 0, 0.9); 
+    border-radius: 20px;
+    padding: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;   
+}
+.nuestros_valores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.word {
+    background-color: var(--color-six);
+    box-shadow: 0 2px 16px rgba(88, 0, 0, 0.9); 
+    border-radius: 20px;
+    padding: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+#integridad { animation-delay: 0s; }
+#diversidad { animation-delay: 1s; }
+#vinculos{ animation-delay: 2s; }
+#emprendedor{ animation-delay: 3s; }
+#resultados { animation-delay: 4s; }
+#compromiso{ animation-delay: 5s; }
+#innovacion { animation-delay: 6s; }
+
+
+@keyframes fadeIn {
+    to {
+        opacity: 10;
+        transform: translateY(0);
+    }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+/* Larger than mobile screen */
+@media (min-width: 40.0rem) { 
+
+}
+
+/* Larger than tablet screen */
+@media (min-width: 80.0rem) { 
+
+}
+
+/* Larger than desktop screen */
+@media (min-width: 120.0rem) { 
+   
+}
+  
