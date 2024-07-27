@@ -40,10 +40,11 @@
     background-color: var(--color-four); 
     border-radius: 10px; 
     padding: 10px; 
-    font-size: 2.5em; 
+    font-size: 4em; 
     display: inline-block; 
     text-shadow: 2px 2px 4px var(--color-one);
     font-family: 'Great Vibes', cursive;
+    border: var(--color-one) solid 2px
 }
 
 .overlay h3 {
