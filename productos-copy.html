@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Rincón del Sorrentino</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/rodo.css">
+    <link rel="stylesheet" href="css/nico.css">
+    <link rel="stylesheet" href="css/jona_productos.css">
+    <link rel="stylesheet" href="css/victorio.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+<body>
+    <div class="contenedora">
+        <!-- navbar de octavio -->
+        <header class="row navbar">
+            <div class="column column-60">
+                <nav class="navbar">
+                    <div class="logo">
+                        <img src="img/pastalogo.png" alt="Logo">
+                    </div>
+                    <button class="menu-toggle" id="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <ul class="menu" id="menu">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="promos.html">Promos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="column">
+                <nav class="navbar-titulo">
+                    <div class="nav-item">
+                        <i class="fas fa-user-plus"></i>
+                        <a href="registro.html">Crear Cuenta</a>
+                    </div>
+                    <div class="nav-item">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <a href="login.html">Iniciar Sesión</a>
+                    </div>
+                    <div class="nav-item">
+                        <i class="fas fa-shopping-cart" id="carritoIcono" alt="Carrito" style="cursor: pointer;"></i>
+                        <a id="carritoTotal" alt="Carrito" style="cursor: pointer;">0 - $0,00</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="row principal">
+            <section class="overlay">
+                <h1>El Rincón del Sorrentino</h1>
+                <h3>PASTAS ARTESANALES</h3>
+            </section>
+        </main>
+        <!-- productos de joni -->
+         <!-- Elemento que indica si el usuario está logueado -->
+        <div id="usuarioLogueado" data-logueado="true"></div>
+        <div class="row productos-destacados-ofertas">
+            <section class="productos">
+                <h2>Pastas Caseras / Salsas</h2>
+                <div class="row" id="productos">
+                    <!-- Productos se insertarán aquí dinámicamente -->
+                </div>
+            </section>
+        </div>
+        <!-- footer octavio -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <img src="img/pastalogo.png" alt="El Rincon del Sorrentino" class="footer-logo">
+                </div>
+                <div class="footer-section">
+                    <h3>Pastas Artesanales</h3>
+                    <p>Calidad y prestigio desde 1943...<br>Gracias por su visita</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Visítanos</h3>
+                    <p>Av. Alberdi 1051<br>Río Cuarto / Córdoba / Argentina</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Comunícate</h3>
+                    <p>(0358) 4249046<br>info@elrincondelsorrentino.com.ar</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 - El Rincón del Sorrentino</p>
+            </div>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>
