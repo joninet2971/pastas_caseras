@@ -11,5 +11,5 @@ document.getElementById('formularioInicioSesion').addEventListener('submit', fun
     sessionStorage.setItem('usuarioActual', usuario);
 
     alert('Inicio de sesión exitoso.');
-    window.location.href = 'index.html'; // Redirigir a la página principal
+    window.location.href = 'productos-copy.html'; // Redirigir a la página principal
 });
