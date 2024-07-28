@@ -111,18 +111,20 @@
     
 }
 
-/* Larger than mobile screen */
-@media (min-width: 40.0rem) { 
-
+@media (max-width: 1024px) {
+  ¡  {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-/* Larger than tablet screen */
-@media (min-width: 80.0rem) { 
-
+@media (max-width: 768px) {
+     {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
-/* Larger than desktop screen */
-@media (min-width: 120.0rem) { 
-   
+@media (max-width: 480px) {
+     {
+        grid-template-columns: 1fr;
+    }
 }
-    
