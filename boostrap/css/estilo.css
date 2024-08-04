@@ -1,0 +1,22 @@
+:root{
+    --color-one: #1d1a39;
+    --color-two: #451952;
+    --color-three: #662549;
+    --color-four: #ae445a;
+    --color-five: #f39f5a;
+    --color-six: #e8bcb9;
+}
+
+body, html {
+    color: var(--color-two);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-six);
+}
+
+@keyframes move {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}

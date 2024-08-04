@@ -10,174 +10,35 @@
     --color-seven: rgba(252, 232, 197, 0.824);
 }
 
-.contenedora_carousel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    background-color: var(--color-six);
+.carousel{
+    padding: 3%;
+
 }
-.carousel {
-    position: relative;
-    width: 1400px;
-    
-}
-.carousel-icons {
-    color: var(--color-two);
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
-    background-color: var(--color-six);
-   
-    
-}
-.carousel-icons div {
-    background-color: var(--color-six);
-    font-family: "Montserrat", sans-serif;
+
+.carousel-inner {
     box-shadow: 0 2px 16px rgba(88, 0, 0, 0.9); 
-    width: 250px;
-    height: 50px;
-    border-radius: 3%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+    border-radius: 10px; 
 }
-.carousel-icons div:hover {
-    background-color: var(--color-five);
-}
-.card {
-    display: none;
-    position: relative;
-    margin-bottom: 50px;
-    top: 20px;
-    left: 0;
-    font-family: "Montserrat", sans-serif;
+
+.carousel-item {
+    padding: 3%;
+    box-shadow: 0 2px 16px rgba(88, 0, 0, 0.9);
     background-color: var(--color-seven);
-    border-radius: 10px;
-    box-shadow: 0 2px 16px rgba(88, 0, 0, 0.9); 
+  
+}
+.carousel-item img {
+    max-width: 80%; /* Ajusta el tamaño de la imagen si es necesario */
+    height: auto;
+}
+.carousel-item .content {
     padding: 20px;
 }
-.card-pic{
-    display: flex;
-    justify-content: center;
+.carousel-item .content h5 {
+    margin-top: 0;
 }
 
-.card.active {
-    display: block;
-}
 
-.card h4 {
-    background-color: var(--color-six);
-    box-shadow: 0 2px 16px rgba(88, 0, 0, 0.9); 
-    border-radius: 20px;
-    padding: 8px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;   
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: var(--color-four); /* Cambiar el color de fondo al pasar el mouse */
 }
-.nuestros_valores {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.word {
-    background-color: var(--color-six);
-    box-shadow: 0 2px 16px rgba(88, 0, 0, 0.9); 
-    border-radius: 20px;
-    padding: 8px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-    opacity: 0;
-    animation: fadeIn 2s forwards;
-}
-
-#integridad { animation-delay: 0s; }
-#diversidad { animation-delay: 1s; }
-#vinculos{ animation-delay: 2s; }
-#emprendedor{ animation-delay: 3s; }
-#resultados { animation-delay: 4s; }
-#compromiso{ animation-delay: 5s; }
-#innovacion { animation-delay: 6s; }
-
-@keyframes fadeIn {
-    to {
-        opacity: 10;
-        transform: translateY(0);
-    }
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-}
-
-@media (max-width: 1024px) {
-    .carousel {
-        width: 100%;
-        padding: 0 20px;
-    }
-    .carousel-icons {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        background-color: var(--color-six);
-    }
-    .carousel-icons div {
-        width: 100%;
-        max-width: 300px;
-        height: auto;
-    }
-    .nuestros_valores{
-        flex-direction: column;
-        align-items: center;   
-    }
-}
-
-@media (max-width: 768px) {
-    .contenedora_carousel {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-    .carousel-icons {
-        flex-direction: column;
-        align-items: center;
-    }
-    .carousel-icons div {
-        width: 100%;
-        max-width: 250px;
-        margin: 5px 0;
-    }
-    .card {
-        margin-bottom: 30px;
-        padding: 10px;
-    }
-    .nuestros_valores{
-        flex-direction: column;
-        align-items: center;   
-    }
-}
-
-@media (max-width: 480px) {
-    .carousel-icons div {
-        width: 100%;
-        max-width: 200px;
-        font-size: 14px;
-    }
-    .card {
-        margin-bottom: 20px;
-        padding: 8px;
-        font-size: 14px;
-    }
-    .card h4 {
-        font-size: 18px;
-        padding: 5px;
-    }
-
-    .nuestros_valores{
-        flex-direction: column;
-        align-items: center;   
-    }
-}
-  
