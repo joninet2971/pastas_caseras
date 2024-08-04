@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 :root{
     --color-one: #1d1a39;
     --color-two: #451952;
@@ -23,6 +23,7 @@
 .nosotros-texto {
     font-family: "Montserrat", sans-serif;
     margin: 1%;
+    color: var(--color-two);
     
 
 }
@@ -89,42 +90,28 @@
     background-color: var(--color-five);
 }
 
-.objetivo{
+.objetivo, .meta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: "Montserrat", sans-serif;
-    Display: flex;
     gap: 5%;
     padding: 2%;
-}
-
-.meta {
-    font-family: "Montserrat", sans-serif;
-    Display: flex;
-    gap: 10%;
-    padding: 2%;
-}
     
+} 
 .linea-divisoria {
     width: 100%;
-    height: 4px; /* Puedes ajustar el grosor de la línea aquí */
+    height: 2px; 
     background-color: var(--color-four);
-    box-shadow: 0 2px 16px rgba(88, 0, 0, 0.9); /* Ajusta el tamaño y la opacidad de la sombra */
-    
+    box-shadow: 0 2px 16px rgba(88, 0, 0, 0.9); 
 }
 
-@media (max-width: 1024px) {
-  ¡  {
-        grid-template-columns: repeat(2, 1fr);
-    }
+.move {
+    text-align: center; /* Centra el texto */
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    animation: move 5s infinite;
 }
 
-@media (max-width: 768px) {
-     {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
-@media (max-width: 480px) {
-     {
-        grid-template-columns: 1fr;
-    }
-}

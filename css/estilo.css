@@ -8,10 +8,18 @@
 }
 
 body, html {
+    color: var(--color-two);
     height: 100%;
     margin: 0;
     padding: 0;
 }
 .contenedora {
-    width: 100%; /* 100% del ancho de la ventana */
+    background-color: var(--color-six);
+    width: 100%; 
+}
+
+@keyframes move {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
 }

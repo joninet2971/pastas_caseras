@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --color-one: #1d1a39;
+    --color-two: #451952;
+    --color-three: #662549;
+    --color-four: #ae445a;
+    --color-five: #f39f5a;
+    --color-six: #e8bcb9;
+}
+
+.prueba .column{
+    border: solid black;
+}
+
+.nosotros {  
+    display: flex;
+    padding: 2%;
+
+}
+
+
+.nosotros-texto {
+    font-family: "Montserrat", sans-serif;
+    margin: 1%;
+    
+
+}
+
+
+.carousel {
+    display: flex;
+    align-items: center;
+    margin: 1%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+
+    
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-controls button {
+    background: none;
+    border: none;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+    padding: 0 10px;
+    transition: color 0.3s;
+}
+
+.carousel-controls button:hover {
+    color: #cccccc;
+}
+
+.boton-conocemas {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    background-color: var(--color-four);
+}
+
+.boton-conocemas:hover {
+    background-color: var(--color-five);
+}
+
+.objetivo{
+    font-family: "Montserrat", sans-serif;
+    Display: flex;
+    gap: 5%;
+    padding: 2%;
+}
+
+.meta {
+    font-family: "Montserrat", sans-serif;
+    Display: flex;
+    gap: 10%;
+    padding: 2%;
+}
+    
+.linea-divisoria {
+    width: 100%;
+    height: 4px; /* Puedes ajustar el grosor de la línea aquí */
+    background-color: var(--color-four);
+    box-shadow: 0 2px 16px rgba(88, 0, 0, 0.9); /* Ajusta el tamaño y la opacidad de la sombra */
+    
+}
+

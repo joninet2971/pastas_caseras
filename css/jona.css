@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-/* Definir las nuevas variables de color */
 :root {
     --color-one: #1d1a39;
     --color-two: #451952;
@@ -8,8 +7,8 @@
     --color-four: #ae445a;
     --color-five: #f39f5a;
     --color-six: #e8bcb9;
+    --color-seven: rgba(252, 232, 197, 0.824);
 }
-/* Asegúrate de que no haya márgenes adicionales en la última tarjeta de productos destacados */
 
 .productos-destacados .productos {
     padding: 40px 40px 40px 40px;
@@ -34,10 +33,9 @@
 }
 
 .productos-destacados .productos .column {
-    background-color: #fff;
+    box-shadow: 0 2px 16px rgba(88, 0, 0, 0.9); 
+    background-color: var(--color-seven);
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e9e9e9;
     padding: 0;
     overflow: hidden;
     min-width: 0;
@@ -204,10 +202,9 @@
 }
 
 .productos-destacados-ofertas .productos .column {
-    background-color: #fff;
+    background-color: var(--color-seven);
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e9e9e9;
+    box-shadow: 0 2px 16px rgba(88, 0, 0, 0.9); 
     padding: 0;
     overflow: hidden;
     min-width: 0;

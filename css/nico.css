@@ -37,14 +37,17 @@
 }
 
 .overlay h1 {
+    box-shadow: 0 2px 32px rgb(0, 0, 0);
     background-color: var(--color-four); 
     border-radius: 10px; 
     padding: 10px; 
     font-size: 4em; 
-    display: inline-block; 
+    display: inline-block;
+    text-align: center; 
     text-shadow: 2px 2px 4px var(--color-one);
     font-family: 'Great Vibes', cursive;
-    border: var(--color-one) solid 2px
+    animation: move 7s infinite;
+   
 }
 
 .overlay h3 {
@@ -54,3 +57,5 @@
     font-size: 4rem;
     color: var(--color-six);
 }
+
+

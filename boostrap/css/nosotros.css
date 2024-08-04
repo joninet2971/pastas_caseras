@@ -23,6 +23,7 @@
     
 }
 .carousel-icons {
+    color: var(--color-two);
     display: flex;
     justify-content: space-between;
     margin: 20px;
@@ -99,7 +100,6 @@
 #resultados { animation-delay: 4s; }
 #compromiso{ animation-delay: 5s; }
 #innovacion { animation-delay: 6s; }
-
 
 @keyframes fadeIn {
     to {
