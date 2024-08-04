@@ -1,0 +1,45 @@
+:root{
+    --color-one: #1d1a39;
+    --color-two: #451952;
+    --color-three: #662549;
+    --color-four: #ae445a;
+    --color-five: #f39f5a;
+    --color-six: #e8bcb9;
+}
+
+.image-overlay {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .image-overlay img {
+    width: 100%;
+    height: auto;
+  }
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+  }
+
+  .overlay-text h1 {
+  background-color: var(--color-four); 
+  border-radius: 10px; 
+  padding: 10px; 
+  font-size: 4em; 
+  color: var(--color-six);
+  display: inline-block; 
+  text-shadow: 2px 2px 4px var(--color-one);
+  font-family: 'Great Vibes', cursive;
+  border: var(--color-one) solid 2px
+  }
+
+  .overlay-text h3 {
+  margin-top: 40px;
+  text-shadow: 2px 2px 4px var(--color-one);
+  font-family: "Dosis", sans-serif;
+  font-size: 2.5rem;
+  color: var(--color-six);
+  }
