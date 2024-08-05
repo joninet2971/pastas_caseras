@@ -1,0 +1,13 @@
+:root {
+    --color-one: #1d1a39;
+    --color-two: #451952;
+    --color-three: #662549;
+    --color-four: #ae445a;
+    --color-five: #f39f5a;
+    --color-six: #e8bcb9;
+    --color-seven: rgba(252, 232, 197, 0.824);
+}
+
+.card-body {
+    background-color: var(--color-seven);
+}   
