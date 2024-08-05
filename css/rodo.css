@@ -113,5 +113,10 @@
     font-style: normal;
     position: relative;
     animation: move 5s infinite;
+    text-shadow: 
+    -1px -1px 0 #ffffff,  
+     1px -1px 0 #ffffff,
+    -1px  1px 0 #ffffff,
+     1px  1px 0 #ffffff;
 }
 
