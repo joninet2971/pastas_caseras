@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@100;400;700&family=Rubik:wght@300;400;500&display=swap');
+/* Importa fuentes desde Google Fonts: Great Vibes, Montserrat, y Rubik. */
+
+:root {
+    --color-one: #1d1a39;  /* Color oscuro, usado para fondos y texto */
+    --color-two: #451952;  /* Color púrpura oscuro */
+    --color-three: #662549;  /* Color púrpura medio */
+    --color-four: #ae445a;  /* Color rojo oscuro */
+    --color-five: #f39f5a;  /* Color naranja claro, usado para fondos */
+    --color-six: #e8bcb9;  /* Color claro, usado para texto */
+}
+
+header {
+    position: fixed;  /* Fija el navbar en la parte superior */
+    top: 0;           /* Posiciona el navbar en la parte superior de la página */
+    left: 0;          /* Alinea el navbar al borde izquierdo */
+    width: 100%;      /* Asegura que el navbar ocupe todo el ancho */
+    background-color: var(--color-four); /* Aplica el color de fondo definido en las variables */
+    z-index: 999;    /* Asegura que el navbar esté por encima de otros elementos */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil al navbar */
+    height: 100px;   /* Ajusta la altura del navbar */
+}
+
+.navbar-brand img {
+    width: 50px;     /* Establece el ancho del logo */
+    height: auto;    /* Mantiene la proporción de altura automáticamente */
+    margin-right: 15px; /* Añade un margen derecho al logo */
+}
+
+.navbar-nav .nav-link {
+    color: var(--color-six); /* Establece el color del texto de los enlaces */
+    font-size: 18px; /* Ajusta el tamaño del texto de los enlaces */
+    padding: 10px 20px; /* Añade espacio dentro de los enlaces */
+    align-items: center;
+    transition: color 0.3s ease; /* Añade una transición suave al cambio de color */
+    font-family: 'Montserrat', sans-serif; /* Aplica la fuente Montserrat a los enlaces */
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--color-five); /* Cambia el color del texto al pasar el mouse sobre el enlace */
+}
+
+.navbar-nav .nav-link::before {
+    content: ''; /* Crea un pseudo-elemento vacío */
+    position: absolute; /* Posiciona el pseudo-elemento de manera absoluta respecto al enlace */
+    width: 100%; /* Asegura que el pseudo-elemento tenga el mismo ancho que el enlace */
+    height: 2px; /* Establece la altura del pseudo-elemento */
+    bottom: -5px; /* Posiciona el pseudo-elemento 5px por debajo del enlace */
+    left: 0; /* Alinea el pseudo-elemento al borde izquierdo del enlace */
+    background-color: var(--color-five); /* Aplica el color de fondo definido en las variables */
+    visibility: hidden; /* Hace que el pseudo-elemento sea invisible por defecto */
+    transform: scaleX(0); /* Inicialmente, el pseudo-elemento está escalado en 0 (invisible) */
+    transition: all 0.3s ease-in-out; /* Añade una transición suave a la visibilidad y escala */
+}
+
+.navbar-nav .nav-link:hover::before {
+    visibility: visible; /* Hace visible el pseudo-elemento al pasar el mouse sobre el enlace */
+    transform: scaleX(1); /* Escala el pseudo-elemento a 1 (visible) */
+}
+
+/* Estilo para el botón de menú (toggle button) */
+.navbar-toggler {
+    border: none; /* Elimina el borde del botón */
+    font-size: 24px; /* Establece el tamaño del texto del botón */
+    color: var(--color-six); /* Aplica el color de texto definido en las variables */
+}
+
+/* para el footers*/
+.text-warning {
+    color: #f39f5a !important; /* Color naranja claro para los títulos */
+}
+
+.bg-dark {
+    background-color: #1d1a39 !important; /* Color oscuro para el fondo */
+}
+
+.text-light {
+    color: #e8bcb9 !important; /* Color claro para el texto */
+}
+
+.border-light {
+    border-color: #e8bcb9 !important; /* Color claro para la línea de separación */
+}
+
+/* Ajustes de la imagen del logo */
+.img-fluid {
+    max-width: 100px; /* Ajusta el tamaño máximo del logo */
+}
+
+/* Estilos de enlaces en el footer */
+a.text-light {
+    color: #e8bcb9 !important; /* Color claro para los enlaces */
+}
+
+a.text-light:hover {
+    color: #f39f5a !important; /* Color naranja claro para el hover */
+}
+
+/* Asegura que el footer cubra todo el ancho y esté alineado */
+footer {
+    width: 100%;
+    background-color: #1d1a39; /* Color oscuro para el fondo */
+}
+
+footer .container {
+    padding: 0 20px; /* Ajusta el padding del contenedor según sea necesario */
+}
+
+/* Asegura que las filas estén alineadas correctamente */
+footer .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Secciones del footer */
+footer .col-md-2, 
+footer .col-md-3 {
+    padding: 10px 0; /* Ajusta el padding de las secciones del footer */
+}
+
+footer .col-md-2.text-center img {
+    max-width: 100px; /* Asegura que el logo no sea más grande que 100px */
+}
+
+/* Línea de separación en la parte inferior del footer */
+footer .border-top {
+    border-top: 1px solid #e8bcb9; /* Color claro para la línea de separación */
+    padding-top: 10px; /* Espacio superior dentro del contenedor de la línea de separación */
+    text-align: center; /* Alinea el texto de la línea de separación al centro */
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .navbar-nav {
+        display: none; /* Oculta los enlaces del navbar por defecto */
+        flex-direction: column; /* Alinea los enlaces verticalmente */
+        width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+        text-align: center; /* Centra el texto de los enlaces */
+    }
+
+    .navbar-toggler {
+        display: block; /* Muestra el botón de menú */
+    }
+
+    .navbar-toggler:focus {
+        outline: none; /* Elimina el contorno al enfocar el botón */
+    }
+
+    .navbar-nav.show {
+        display: flex; /* Muestra los enlaces del navbar cuando se activa el menú */
+    }
+
+    .navbar-nav .nav-link {
+        margin: 10px 0; /* Añade margen vertical entre los enlaces */
+        font-size: 18px; /* Ajusta el tamaño del texto */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column; /* Alinea el navbar verticalmente */
+        padding: 10px; /* Ajusta el padding del navbar */
+    }
+
+    .navbar-brand {
+        margin-bottom: 10px; /* Añade margen inferior al logo */
+    }
+
+    .navbar-toggler {
+        font-size: 24px; /* Ajusta el tamaño del icono del botón de menú */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 16px; /* Reduce el tamaño del texto en pantallas pequeñas */
+    }
+}
