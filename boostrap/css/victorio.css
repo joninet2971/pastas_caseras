@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@100;400;700&family=Rubik:wght@300;400;500&display=swap');
-/* Importa fuentes desde Google Fonts: Great Vibes, Montserrat, y Rubik. */
 
+/* Definición de Variables CSS para Colores */
 :root {
     --color-one: #1d1a39;  /* Color oscuro, usado para fondos y texto */
     --color-two: #451952;  /* Color púrpura oscuro */
@@ -10,167 +10,206 @@
     --color-six: #e8bcb9;  /* Color claro, usado para texto */
 }
 
-header {
-    position: fixed;  /* Fija el navbar en la parte superior */
-    top: 0;           /* Posiciona el navbar en la parte superior de la página */
-    left: 0;          /* Alinea el navbar al borde izquierdo */
-    width: 100%;      /* Asegura que el navbar ocupe todo el ancho */
-    background-color: var(--color-four); /* Aplica el color de fondo definido en las variables */
-    z-index: 999;    /* Asegura que el navbar esté por encima de otros elementos */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil al navbar */
-    height: 100px;   /* Ajusta la altura del navbar */
+body {
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
 }
 
-.navbar-brand img {
-    width: 50px;     /* Establece el ancho del logo */
-    height: auto;    /* Mantiene la proporción de altura automáticamente */
-    margin-right: 15px; /* Añade un margen derecho al logo */
+header {
+    background-color: var(--color-four);
+}
+
+.navbar {
+    padding: 20px 20px;
+    background-color: var(--color-four) !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo-img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
 }
 
 .navbar-nav .nav-link {
-    color: var(--color-six); /* Establece el color del texto de los enlaces */
-    font-size: 18px; /* Ajusta el tamaño del texto de los enlaces */
-    padding: 10px 20px; /* Añade espacio dentro de los enlaces */
-    align-items: center;
-    transition: color 0.3s ease; /* Añade una transición suave al cambio de color */
-    font-family: 'Montserrat', sans-serif; /* Aplica la fuente Montserrat a los enlaces */
+    color: var(--color-six) !important;
+    position: relative;
+    transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-    color: var(--color-five); /* Cambia el color del texto al pasar el mouse sobre el enlace */
+    color: var(--color-five) !important;
 }
 
 .navbar-nav .nav-link::before {
-    content: ''; /* Crea un pseudo-elemento vacío */
-    position: absolute; /* Posiciona el pseudo-elemento de manera absoluta respecto al enlace */
-    width: 100%; /* Asegura que el pseudo-elemento tenga el mismo ancho que el enlace */
-    height: 2px; /* Establece la altura del pseudo-elemento */
-    bottom: -5px; /* Posiciona el pseudo-elemento 5px por debajo del enlace */
-    left: 0; /* Alinea el pseudo-elemento al borde izquierdo del enlace */
-    background-color: var(--color-five); /* Aplica el color de fondo definido en las variables */
-    visibility: hidden; /* Hace que el pseudo-elemento sea invisible por defecto */
-    transform: scaleX(0); /* Inicialmente, el pseudo-elemento está escalado en 0 (invisible) */
-    transition: all 0.3s ease-in-out; /* Añade una transición suave a la visibilidad y escala */
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--color-five);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
 }
 
 .navbar-nav .nav-link:hover::before {
-    visibility: visible; /* Hace visible el pseudo-elemento al pasar el mouse sobre el enlace */
-    transform: scaleX(1); /* Escala el pseudo-elemento a 1 (visible) */
+    visibility: visible;
+    transform: scaleX(1);
 }
 
-/* Estilo para el botón de menú (toggle button) */
 .navbar-toggler {
-    border: none; /* Elimina el borde del botón */
-    font-size: 24px; /* Establece el tamaño del texto del botón */
-    color: var(--color-six); /* Aplica el color de texto definido en las variables */
+    border: none;
+    font-size: 24px;
+    color: var(--color-six);
 }
 
-/* para el footers*/
-.text-warning {
-    color: #f39f5a !important; /* Color naranja claro para los títulos */
+.navbar-nav .nav-item {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
 }
 
-.bg-dark {
-    background-color: #1d1a39 !important; /* Color oscuro para el fondo */
+.navbar-nav .nav-item i {
+    margin-right: 8px;
+    color: var(--color-six);
 }
 
-.text-light {
-    color: #e8bcb9 !important; /* Color claro para el texto */
+.navbar-nav .nav-item a {
+    color: var(--color-six);
+    text-decoration: none;
+    font-size: 15px;
 }
 
-.border-light {
-    border-color: #e8bcb9 !important; /* Color claro para la línea de separación */
+.navbar-nav .nav-item a:hover {
+    color: var(--color-five);
 }
 
-/* Ajustes de la imagen del logo */
-.img-fluid {
-    max-width: 100px; /* Ajusta el tamaño máximo del logo */
-}
+/* estilo para el footer */
 
-/* Estilos de enlaces en el footer */
-a.text-light {
-    color: #e8bcb9 !important; /* Color claro para los enlaces */
-}
-
-a.text-light:hover {
-    color: #f39f5a !important; /* Color naranja claro para el hover */
-}
-
-/* Asegura que el footer cubra todo el ancho y esté alineado */
 footer {
-    width: 100%;
-    background-color: #1d1a39; /* Color oscuro para el fondo */
+    background-color: var(--color-one) !important; /* Color oscuro para el fondo */
+    color: var(--color-six) !important; /* Color claro para el texto */
+    width: 100%; /* Asegura que el footer cubra todo el ancho */
+    padding: 20px 0; /* Ajusta el padding superior e inferior */
+    position:relative; /* Asegura que el footer se alinee correctamente */
+ 
 }
 
+/* Ajusta el padding del contenedor para que el footer use todo el ancho */
 footer .container {
-    padding: 0 20px; /* Ajusta el padding del contenedor según sea necesario */
+    padding: 14px 25px; /* Ajusta el padding horizontal del contenedor */
+    max-width: none; /* Permite que el contenedor use todo el ancho disponible */
 }
 
-/* Asegura que las filas estén alineadas correctamente */
+/* Alineación de filas */
 footer .row {
     margin-left: 0;
     margin-right: 0;
 }
 
-/* Secciones del footer */
+/* Espaciado entre columnas */
 footer .col-md-2, 
 footer .col-md-3 {
-    padding: 10px 0; /* Ajusta el padding de las secciones del footer */
+    padding: 10px 10px; /* Padding de las secciones del footer */
+    margin-bottom: 15px; /* Espacio inferior entre columnas */
 }
 
+/* Ajustes específicos para el logo */
 footer .col-md-2.text-center img {
-    max-width: 100px; /* Asegura que el logo no sea más grande que 100px */
+    max-width: 100px; /* Tamaño máximo del logo */
 }
 
 /* Línea de separación en la parte inferior del footer */
 footer .border-top {
-    border-top: 1px solid #e8bcb9; /* Color claro para la línea de separación */
+    border-top: 1px solid var(--color-six) !important; /* Color claro para la línea de separación */
     padding-top: 10px; /* Espacio superior dentro del contenedor de la línea de separación */
     text-align: center; /* Alinea el texto de la línea de separación al centro */
 }
 
-/* Estilos Responsivos */
-@media (max-width: 768px) {
-    .navbar-nav {
-        display: none; /* Oculta los enlaces del navbar por defecto */
-        flex-direction: column; /* Alinea los enlaces verticalmente */
-        width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
-        text-align: center; /* Centra el texto de los enlaces */
+/* Títulos h3 */
+footer h3.text-warning {
+    color: var(--color-five) !important; /* Color naranja claro para los títulos */
+    font-size: 25px; /* Tamaño del texto del título */
+    font-family: 'Arial', sans-serif; /* Fuente del título */
+    margin-bottom: 10px; /* Espacio debajo del título */
+    margin-top: 10px; /* Elimina el margen superior para alinear mejor con los párrafos */
+    text-align: center;
+}
+
+/* Párrafos */
+footer p {
+    color: var(--color-six); /* Color claro para el texto del párrafo */
+    font-size: 14px; /* Tamaño del texto del párrafo */
+    font-family: 'Arial', sans-serif; /* Fuente del párrafo */
+    margin-bottom: 10px; /* Espacio debajo del párrafo */
+    text-align: center;
+}
+.text-light{
+    color: var(--color-six) !important;
+    font-size: 26px ;
+    margin-right: 12px;
+}
+/* Responsive Styles */
+@media (max-width: 40rem) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .navbar-toggler {
-        display: block; /* Muestra el botón de menú */
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
     }
 
-    .navbar-toggler:focus {
-        outline: none; /* Elimina el contorno al enfocar el botón */
+    .navbar-menu.active {
+        display: flex;
     }
 
-    .navbar-nav.show {
-        display: flex; /* Muestra los enlaces del navbar cuando se activa el menú */
+    .navbar-toggle {
+        display: block;
+        background-color: var(--color-two);
+        color: var(--color-six);
+        border: none;
+        padding: 0.5rem;
+        cursor: pointer;
     }
 
-    .navbar-nav .nav-link {
-        margin: 10px 0; /* Añade margen vertical entre los enlaces */
-        font-size: 18px; /* Ajusta el tamaño del texto */
+    .navbar-menu a {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .footer {
+        font-size: 0.875rem;
     }
 }
 
-@media (max-width: 480px) {
+/* Estilos para pantallas medianas (hasta 80rem) */
+@media (max-width: 80rem) {
+    .navbar-menu {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .footer {
+        font-size: 1rem;
+    }
+}
+
+/* Estilos para pantallas grandes (mayores a 80rem) */
+@media (min-width: 80rem) {
     .navbar {
-        flex-direction: column; /* Alinea el navbar verticalmente */
-        padding: 10px; /* Ajusta el padding del navbar */
+        padding: 1rem 2rem;
     }
 
-    .navbar-brand {
-        margin-bottom: 10px; /* Añade margen inferior al logo */
-    }
-
-    .navbar-toggler {
-        font-size: 24px; /* Ajusta el tamaño del icono del botón de menú */
-    }
-
-    .navbar-nav .nav-link {
-        font-size: 16px; /* Reduce el tamaño del texto en pantallas pequeñas */
+    .footer {
+        font-size: 1.125rem;
     }
 }
