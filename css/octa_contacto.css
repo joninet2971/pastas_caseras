@@ -8,10 +8,8 @@
     --color-five: #f39f5a;
     --color-six: #e8bcb9;
     --color-seven: rgba(252, 232, 197, 0.824);
-   
 }
 .contenedora {
-    
     overflow-x: hidden; /* Evitar el desbordamiento horizontal solo en este contenedor */
 }
 .contacto {
@@ -22,7 +20,6 @@
     width: 100%;
     box-sizing: border-box;
     margin-bottom: 0;
-    
 }
 
 .contact-info {
@@ -32,7 +29,6 @@
     flex: 1;
     max-width: 300px;
     box-shadow: 0 2px 16px rgba(88, 0, 0, 0.9); 
-
 }
 
 .contact-info h3 {
@@ -45,7 +41,6 @@
     padding: 1rem;
     background-color: var(--color-seven);
     box-shadow: 0 2px 16px rgba(88, 0, 0, 0.9); 
-
     width: 100%;
 }
 
@@ -84,11 +79,10 @@
 }
 
 .ubicacion {
-
-    padding: 3%;
+    margin-bottom: 180px;
+    margin-top: 0;
+    padding: 5%;
 }
-
-
 
 .boton-formulario {
     font-family: "Montserrat", sans-serif;
@@ -100,14 +94,11 @@
     background-color: var(--color-five);
 }
 
-
-
 #mapa {
     width: 100%;
     height: 450px;
     margin-top: 0;
 }
-
 
 /* Tablet and smaller */
 @media (max-width: 80rem) {

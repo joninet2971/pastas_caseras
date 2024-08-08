@@ -1,11 +1,7 @@
-document.getElementById('menu-toggle').addEventListener('click', function() {
-    var menu = document.getElementById('menu');
-    if (menu.style.display === 'block') {
-        menu.style.display = 'none';
-    } else {
-        menu.style.display = 'block';
-    }
-});
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+    const menu = document.querySelector('.menu');
+    menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+  });
 
 document.addEventListener('DOMContentLoaded', function() {
     const prevButton = document.querySelector('.prev');
