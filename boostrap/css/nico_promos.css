@@ -11,3 +11,7 @@
 .card-body {
     background-color: var(--color-seven);
 }   
+
+.custom-shadow {
+    box-shadow: 0 2px 16px rgba(88, 0, 0, 0.9); 
+  }
