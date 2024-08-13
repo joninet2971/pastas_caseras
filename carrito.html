@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro e Inicio de Sesión</title>
+</head>
+
+<body>
+    <h2>Registro</h2>
+    <form id="formularioRegistro">
+        <label for="regUsuario">Nombre de Usuario:</label>
+        <input type="text" id="regUsuario" required>
+        <br>
+        <label for="regContrasena">Contraseña:</label>
+        <input type="password" id="regContrasena" required>
+        <br>
+        <label for="regTelefono">Teléfono:</label>
+        <input type="number" id="regTelefono" required>
+        <br>
+        <label for="regDireccion">Dirección:</label>
+        <input type="text" id="regDireccion" required>
+        <br>
+        <label for="regDNI">DNI:</label>
+        <input type="number" id="regDNI" required>
+        <br>
+        <button type="submit">Registrar</button>
+    </form>
+
+    <h2>Inicio de Sesión</h2>
+    <form id="formularioInicioSesion">
+        <label for="loginUsuario">Nombre de Usuario:</label>
+        <input type="text" id="loginUsuario" required>
+        <br>
+        <label for="loginContrasena">Contraseña:</label>
+        <input type="password" id="loginContrasena" required>
+        <br>
+        <button type="submit">Iniciar Sesión</button>
+    </form>
+
+    <h2>Productos</h2>
+    <div id="productos"></div>
+
+    <h2>Carrito de Compras</h2>
+    <div id="carrito"></div>
+    <button id="btnComprar" onclick="realizarCompra()">Realizar Compra</button>
+
+    <script src="js/carroscript.js"></script>
+</body>
+
+</html>
+
