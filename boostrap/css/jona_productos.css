@@ -10,7 +10,6 @@
     --color-six: #e8bcb9;
 }
 .card {
-    border: 1px solid #e9e9e9;
     transition: transform 0.3s ease;
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
@@ -28,10 +27,6 @@
 
 .card-footer {
     color: white;
-}
-
-.card-body {
-    padding: 15px;
 }
 
 .bg-light {
