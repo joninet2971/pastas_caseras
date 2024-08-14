@@ -14,11 +14,55 @@
     <link rel="stylesheet" href="css/victorio.css">
 </head>
 <body>
-    <div class="container-fluid px-0">
-        <!-- Navbar de Octavio -->
-        <header class="row mx-0 header">
-            <h2>Contenido Octavio</h2>
+    <div class="container-fluid pb-0">
+        <!-- Navbar de Octavio -->  
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top p-4">
+                <a class="navbar-brand" href="#">
+                    <img src="img/pastalogo.png" alt="Logo" style="width: 50px; height: auto; margin-left: 25px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="promos.html">Promos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-nav ml-auto">
+                        <div class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-user-plus"></i> Crear Cuenta
+                            </a>
+                        </div>
+                        <div class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
+                            </a>
+                        </div>
+                        <div class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-shopping-cart"></i> 0 - $0,00
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </header>
+    </div>
 
         <!-- Principal Nico -->
         <main class="row mx-0 main">
@@ -99,9 +143,50 @@
         
 
         <!-- Footer de Octavio -->
-        <footer class="row mx-0 footer">
-            <h2>Contenido Octavio</h2>
-        </footer>
+        <footer class="bg text-light py-4">
+            <div class="container-fluid">
+                <div class="row g-4 text-center text-md-start">
+                    <!-- Logo -->
+                    <div class="col-lg-3 mt-4 justify-content-center">
+                        <img src="img/pastalogo.png" alt="El Rincón del Sorrentino" class="img-fluid" style="max-width: 100px;">
+                    </div>
+        
+                    <!-- Descripción -->
+                    <div class="col-lg-2 mt-4">
+                        <h5 class="text-warning">Pastas Artesanales</h5>
+                        <p>Calidad y prestigio desde 1943.<br>Gracias por su visita</p>
+                    </div>
+        
+                    <!-- Redes Sociales -->
+                    <div class="col-lg-2 mt-4">
+                        <h5 class="text-warning">Redes Sociales</h5>
+                        <p>
+                            <a href="https://www.instagram.com" target="_blank" class="text-light me-2"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com" target="_blank" class="text-light me-2"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.twitter.com" target="_blank" class="text-light me-2"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.youtube.com" target="_blank" class="text-light"><i class="fab fa-youtube"></i></a>
+                        </p>
+                    </div>
+        
+                    <!-- Dirección -->
+                    <div class="col-lg-2 mt-4">
+                        <h5 class="text-warning">Visítanos</h5>
+                        <p>Av. Alberdi 1051<br>Río Cuarto / Córdoba / Argentina</p>
+                    </div>
+        
+                    <!-- Contacto -->
+                    <div class="col-lg-2 mt-4">
+                        <h5 class="text-warning">Comunícate</h5>
+                        <p>(0358) 4249046<br>info@elrincondelsorrentino.com.ar</p>
+                    </div>
+                </div>
+        
+                <!-- Pie de página -->
+                <div class="border-top border-light pt-3 text-center mt-4">
+                    <p class="mb-0">© 2024 - El Rincón del Sorrentino</p>
+                </div>
+            </div>
+        </footer> 
     </div>
 
     <!-- Bootstrap JS y dependencias -->

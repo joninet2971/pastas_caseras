@@ -7,11 +7,13 @@
     --color-four: #ae445a;
     --color-five: #f39f5a;
     --color-six: #e8bcb9;
-    --color-seven: rgba(252, 232, 197, 0.824);  
+    --color-seven: rgba(252, 232, 197, 0.824);
 }
-
-.bg-dark {
+.contact-info{
     background-color: var(--color-one) !important;
+}
+.navbar {
+    background-color: var(--color-four) !important;
 }
 
 .bg-light {
@@ -27,55 +29,51 @@
     font-family: "Montserrat", sans-serif;
     font-size: 15px;
 }
+
 .btn-custom:hover {
-    background-color: var(--color-five);
+    background-color: var(--color-five) !important; 
 }
-.contact-wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.ubicacion {
+    margin-bottom: 180px;
     padding: 5%;
-    width: 100%;
-    box-sizing: border-box;
-    margin-bottom: 0;
 }
+
+.contact-wrapper {
+    gap: 0;
+    margin-left: 20px;
+}
+
 .contact-info,
 .contact-form {
+    flex: 1;
     margin: 0;
+    min-width: 0;
 }
 
-.contact-info{ 
-    flex: 1;
+.contact-info {
+    background-color: var(--color-one);
     max-width: 300px;
-    padding: 1rem ;
-    font-size: 16px;
+    box-shadow: 0 2px 16px rgba(88, 0, 0, 0.9);
 }
 
 .contact-form {
-    flex: 2 ;
-    padding: 1rem;
-    width: 100%;
-}
-
-.contact-form form input,
-.contact-form form textarea {
     background-color: var(--color-seven);
-    width: 100%;
-    margin-bottom: 1rem;
-    border: 1px solid var(--color-three);
+    max-width: 100%;
+    box-shadow: 0 2px 16px rgba(88, 0, 0, 0.9);
 }
 
-.mapa {
-    width: 100%;
-    height: 450px;
-    margin-top: 0;
+.contact-info p{
+    font-size: 16px; 
+    margin-bottom: 1rem;
 }
-.ubicacion{
-    margin-bottom: 180px;
-    margin-top: 0;
-    padding: 5%;
+
+.form-control-custom {
+    background-color: var(--color-seven);
+    border: 1px solid var(--color-three);
+    color: var(--color-six);
+    padding: 0;
 }
-/* responsive */
+
 @media (max-width: 80rem) {
     .contact-wrapper {
         flex-direction: column;
@@ -83,14 +81,10 @@
 
     .contact-info {
         max-width: 100%;
-        margin-bottom: 0; 
     }
 
     .contact-form {
         flex: 1; 
-    }
-    .contact-info,.contact-form {
-        margin: 0;
     }
 }
 

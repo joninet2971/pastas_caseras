@@ -10,147 +10,61 @@
     --color-six: #e8bcb9;  /* Color claro, usado para texto */
 }
 
-body {
-    font-family: 'Rubik', sans-serif;
-    overflow-x: hidden;
-}
 
-header {
-    background-color: var(--color-four);
-}
-
-.navbar {
-    padding: 20px 20px;
+.navbar{
     background-color: var(--color-four) !important;
     font-family: 'Montserrat', sans-serif;
 }
-
-.logo-img {
-    width: 50px;
-    height: auto;
-    margin-right: 10px;
-}
-
+/* Efecto de línea debajo de cada enlace del navbar */
 .navbar-nav .nav-link {
-    color: var(--color-six) !important;
     position: relative;
-    transition: color 0.3s ease;
+    padding-bottom: 5px; 
+    overflow: hidden;
 }
 
-.navbar-nav .nav-link:hover {
-    color: var(--color-five) !important;
-}
-
-.navbar-nav .nav-link::before {
-    content: '';
-
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
     width: 100%;
     height: 2px;
-    bottom: -5px;
-    left: 0;
-    background-color: var(--color-five);
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: all 0.3s ease-in-out;
+    background-color: var(--color-five); 
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
 }
 
-.navbar-nav .nav-link:hover::before {
-    visibility: visible;
-    transform: scaleX(1);
+.navbar-nav .nav-link:hover::after {
+    transform: translateX(0);
 }
 
-.navbar-toggler {
-    border: none;
-    font-size: 24px;
-    color: var(--color-six);
+/* Footer */
+.bg {
+    background-color: var(--color-one) !important;
 }
 
-.navbar-nav .nav-item {
-    display: flex;
-    align-items: center;
-    margin-left: 8px;
-}
-
-.navbar-nav .nav-item i {
-    margin-right: 8px;
-    color: var(--color-six);
-}
-
-.navbar-nav .nav-item a {
-    color: var(--color-six);
-    text-decoration: none;
-    font-size: 15px;
-}
-
-.navbar-nav .nav-item a:hover {
-    color: var(--color-five);
-}
-
-/* estilo para el footer */
-
-footer {
-    background-color: var(--color-one) !important; /* Color oscuro para el fondo */
-    color: var(--color-six) !important; /* Color claro para el texto */
-    width: 100%; /* Asegura que el footer cubra todo el ancho */
-    padding: 20px 0; /* Ajusta el padding superior e inferior */
-    position:relative; /* Asegura que el footer se alinee correctamente */
- 
-}
-
-/* Ajusta el padding del contenedor para que el footer use todo el ancho */
-footer .container {
-    padding: 14px 25px; /* Ajusta el padding horizontal del contenedor */
-    max-width: none; /* Permite que el contenedor use todo el ancho disponible */
-}
-
-/* Alineación de filas */
-footer .row {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-/* Espaciado entre columnas */
-footer .col-md-2, 
-footer .col-md-3 {
-    padding: 10px 10px; /* Padding de las secciones del footer */
-    margin-bottom: 15px; /* Espacio inferior entre columnas */
-}
-
-/* Ajustes específicos para el logo */
-footer .col-md-2.text-center img {
-    max-width: 100px; /* Tamaño máximo del logo */
-}
-
-/* Línea de separación en la parte inferior del footer */
-footer .border-top {
-    border-top: 1px solid var(--color-six) !important; /* Color claro para la línea de separación */
-    padding-top: 10px; /* Espacio superior dentro del contenedor de la línea de separación */
-    text-align: center; /* Alinea el texto de la línea de separación al centro */
-}
-
-/* Títulos h3 */
-footer h3.text-warning {
-    color: var(--color-five) !important; /* Color naranja claro para los títulos */
-    font-size: 25px; /* Tamaño del texto del título */
-    font-family: 'Arial', sans-serif; /* Fuente del título */
-    margin-bottom: 10px; /* Espacio debajo del título */
-    margin-top: 10px; /* Elimina el margen superior para alinear mejor con los párrafos */
-    text-align: center;
-}
-
-/* Párrafos */
-footer p {
-    color: var(--color-six); /* Color claro para el texto del párrafo */
-    font-size: 14px; /* Tamaño del texto del párrafo */
-    font-family: 'Arial', sans-serif; /* Fuente del párrafo */
-    margin-bottom: 10px; /* Espacio debajo del párrafo */
-    text-align: center;
-}
-.text-light{
+.text-light {
     color: var(--color-six) !important;
-    font-size: 26px ;
-    margin-right: 12px;
+    font-size: 14px;
 }
+
+.text-warning {
+    color: var(--color-five) !important; 
+    font-size: 25px;
+}
+
+.text-light a:hover {
+    color: var(--color-five) !important; 
+}
+.text-light i{
+    font-size: 26px;
+    margin-right: 8px;
+}
+.border-light {
+    border-color: var(--color-six) !important; 
+}
+
+
 /* Responsive Styles */
 @media (max-width: 40rem) {
     .navbar {
