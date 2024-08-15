@@ -16,7 +16,7 @@ body, html {
 
 .container {
     background-color: var(--color-six);
-    max-width: 2500px; /* Ancho máximo */
+    max-width: 2000px; /* Ancho máximo */
     margin: 0 auto; /* Centra el contenedor horizontalmente */
 }
 
