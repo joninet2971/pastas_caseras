@@ -1,3 +1,23 @@
+var modalRegistro = document.getElementById("modalRegistro");
+var btnRegistro = document.getElementById("abrirModal");
+var spanRegistro = document.getElementById("closeRegistro");
+btnRegistro.onclick = function () {
+    console.log("Abrir modal");
+    modalRegistro.style.display = "block";
+}
+spanRegistro.onclick = function () {
+    console.log("Cerrar modal con X");
+    modalRegistro.style.display = "none";
+}
+window.onclick = function (event) {
+    if (event.target == modalRegistro) {
+        console.log("Cerrar modal por clic fuera");
+        modalRegistro.style.display = "none";
+    }
+}
+
+
+
 const validarRegistro = (usuario, contrasena, telefono, direccion, dni) => {
     if (!usuario || usuario.length < 5) {
         alert('El nombre de usuario debe tener al menos 5 caracteres.');
@@ -57,6 +77,6 @@ document.getElementById('formularioRegistro').addEventListener('submit', functio
         localStorage.setItem('usuarios', JSON.stringify(usuarios));
         alert('Usuario registrado exitosamente.');
         document.getElementById('formularioRegistro').reset();
-        window.location.href = '../miligram/index.html';
+        location.reload();
     }
 });

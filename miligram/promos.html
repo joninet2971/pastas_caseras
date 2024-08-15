@@ -39,13 +39,52 @@
                 <nav class="navbar-titulo">
                     <div class="nav-item">
                         <i class="fas fa-user-plus"></i>
-                        <a href="crear_cuenta.html">Crear Cuenta</a>
+                        <a href="#" id="abrirModal">Crear Cuenta</a>
+                    </div>
+                    <div id="modalRegistro" class="modal">
+                        <div class="modal-content">
+                            <span class="close" id="closeRegistro">&times;</span>
+                            <h2>Registro</h2>
+                            <form id="formularioRegistro">
+                                <label for="regUsuario">Nombre de Usuario:</label>
+                                <input type="text" id="regUsuario" required>
+                                <br>
+                                <label for="regContrasena">Contraseña:</label>
+                                <input type="password" id="regContrasena" required>
+                                <br>
+                                <label for="regTelefono">Teléfono:</label>
+                                <input type="number" id="regTelefono" required>
+                                <br>
+                                <label for="regDireccion">Dirección:</label>
+                                <input type="text" id="regDireccion" required>
+                                <br>
+                                <label for="regDNI">DNI:</label>
+                                <input type="number" id="regDNI" required>
+                                <br>
+                                <button type="submit">Registrar</button>
+                            </form>
+                        </div>
                     </div>
                     <div class="nav-item" id="login-section">
                         <i class="fas fa-sign-in-alt" id="login-icon"></i>
-                        <a href="inicio_sesion.html" id="login-link">Iniciar Sesión</a>
+                        <a href="#" id="abrirModalLogin">Iniciar Sesión</a>
                         <span id="logged-in-user"></span>
                     </div>
+                        <div id="modalInicioSesion" class="modal">
+                            <div class="modal-content">
+                                <span class="close" id="closeSesion">&times;</span>
+                                <h2>Inicio de Sesión</h2>
+                                <form id="formularioInicioSesion">
+                                    <label for="loginUsuario">Nombre de Usuario:</label>
+                                    <input type="text" id="loginUsuario" required>
+                                    <br>
+                                    <label for="loginContrasena">Contraseña:</label>
+                                    <input type="password" id="loginContrasena" required>
+                                    <br>
+                                    <button type="submit">Iniciar Sesión</button>
+                                </form>
+                            </div>
+                        </div>
                     <div class="nav-item" id="carrito-container">
                         <i class="fas fa-shopping-cart"></i>
                         <!-- Ventana desplegable -->
@@ -183,6 +222,8 @@
             </div>
         </footer>
         <script src="js/script.js"></script>
+        <script src="js/crear_cuenta.js"></script>
+        <script src="js/inicio_sesion.js"></script>
     </div>
 </body>
 </html>
