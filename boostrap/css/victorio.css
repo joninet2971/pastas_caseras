@@ -1,16 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@100;400;700&family=Rubik:wght@300;400;500&display=swap');
 
-/* Definición de Variables CSS para Colores */
 :root {
-    --color-one: #1d1a39;  /* Color oscuro, usado para fondos y texto */
-    --color-two: #451952;  /* Color púrpura oscuro */
-    --color-three: #662549;  /* Color púrpura medio */
-    --color-four: #ae445a;  /* Color rojo oscuro */
-    --color-five: #f39f5a;  /* Color naranja claro, usado para fondos */
-    --color-six: #e8bcb9;  /* Color claro, usado para texto */
+    --color-one: #1d1a39;  
+    --color-two: #451952;  
+    --color-three: #662549; 
+    --color-four: #ae445a;  
+    --color-five: #f39f5a; 
+    --color-six: #e8bcb9; 
 }
-
-
+/* ajuste de color y letra del navbar */
 .navbar{
     background-color: var(--color-four) !important;
     font-family: 'Montserrat', sans-serif;
@@ -18,7 +16,6 @@
 /* Efecto de línea debajo de cada enlace del navbar */
 .navbar-nav .nav-link {
     position: relative;
-    padding-bottom: 5px; 
     overflow: hidden;
 }
 
@@ -39,91 +36,17 @@
 }
 
 /* Footer */
-.bg {
+footer {
     background-color: var(--color-one) !important;
-}
-
-.text-light {
     color: var(--color-six) !important;
     font-size: 14px;
 }
-
-.text-warning {
-    color: var(--color-five) !important; 
+.container-fluid h5{
+    color: var(--color-five) !important;
     font-size: 25px;
 }
 
-.text-light a:hover {
-    color: var(--color-five) !important; 
-}
-.text-light i{
+i {
     font-size: 26px;
-    margin-right: 8px;
-}
-.border-light {
-    border-color: var(--color-six) !important; 
-}
-
-
-/* Responsive Styles */
-@media (max-width: 40rem) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar-menu {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .navbar-menu.active {
-        display: flex;
-    }
-
-    .navbar-toggle {
-        display: block;
-        background-color: var(--color-two);
-        color: var(--color-six);
-        border: none;
-        padding: 0.5rem;
-        cursor: pointer;
-    }
-
-    .navbar-menu a {
-        padding: 1rem;
-        text-align: center;
-    }
-
-    .footer {
-        font-size: 0.875rem;
-    }
-}
-
-/* Estilos para pantallas medianas (hasta 80rem) */
-@media (max-width: 80rem) {
-    .navbar-menu {
-        display: flex;
-        gap: 1rem;
-    }
-
-    .navbar-toggle {
-        display: none;
-    }
-
-    .footer {
-        font-size: 1rem;
-    }
-}
-
-/* Estilos para pantallas grandes (mayores a 80rem) */
-@media (min-width: 80rem) {
-    .navbar {
-        padding: 1rem 2rem;
-    }
-
-    .footer {
-        font-size: 1.125rem;
-    }
-}
+    margin-right: 1rem;
+} 

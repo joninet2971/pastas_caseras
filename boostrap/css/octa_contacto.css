@@ -9,97 +9,29 @@
     --color-six: #e8bcb9;
     --color-seven: rgba(252, 232, 197, 0.824);
 }
-.contact-info{
-    background-color: var(--color-one) !important;
-}
-.navbar {
-    background-color: var(--color-four) !important;
-}
-
-.bg-light {
-    background-color: var(--color-seven) !important;
-}
-
-.btn-custom {
-    color: white;
-    padding: 0.50rem 2rem;
-    border-radius: 4px;
-    cursor: pointer;
-    border: none;
-    font-family: "Montserrat", sans-serif;
-    font-size: 15px;
-}
-
-.btn-custom:hover {
-    background-color: var(--color-five) !important; 
-}
-.ubicacion {
-    margin-bottom: 180px;
-    padding: 5%;
-}
-
-.contact-wrapper {
-    gap: 0;
-    margin-left: 20px;
-}
-
-.contact-info,
-.contact-form {
-    flex: 1;
-    margin: 0;
-    min-width: 0;
-}
 
 .contact-info {
     background-color: var(--color-one);
-    max-width: 300px;
+    color: var(--color-six);
     box-shadow: 0 2px 16px rgba(88, 0, 0, 0.9);
 }
 
 .contact-form {
     background-color: var(--color-seven);
-    max-width: 100%;
     box-shadow: 0 2px 16px rgba(88, 0, 0, 0.9);
-}
-
-.contact-info p{
-    font-size: 16px; 
-    margin-bottom: 1rem;
 }
 
 .form-control-custom {
     background-color: var(--color-seven);
     border: 1px solid var(--color-three);
     color: var(--color-six);
-    padding: 0;
+}
+.btn-custom{
+    background-color: var(--color-four);
+}
+.btn-custom:hover {
+    background-color: var(--color-five) !important; 
 }
 
-@media (max-width: 80rem) {
-    .contact-wrapper {
-        flex-direction: column;
-    }
 
-    .contact-info {
-        max-width: 100%;
-    }
 
-    .contact-form {
-        flex: 1; 
-    }
-}
-
-@media (max-width: 40rem) {
-    .contact-form form input,
-    .contact-form form textarea {
-        font-size: 0.875rem; 
-    }
-
-    .contact-form form button {
-        width: 100%;
-        padding: 0.5rem; 
-    }
-
-    .mapa {
-        height: 300px; 
-    }
-}

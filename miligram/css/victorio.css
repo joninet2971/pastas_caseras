@@ -2,15 +2,15 @@
 
 /* Definición de Variables CSS para Colores */
 :root {
-    --color-one: #1d1a39;  /* Color oscuro, usado para fondos y texto */
-    --color-two: #451952;  /* Color púrpura oscuro */
-    --color-three: #662549;  /* Color púrpura medio */
-    --color-four: #ae445a;  /* Color rojo oscuro */
-    --color-five: #f39f5a;  /* Color naranja claro, usado para fondos */
-    --color-six: #e8bcb9;  /* Color claro, usado para texto */
+    --color-one: #1d1a39;  
+    --color-two: #451952; 
+    --color-three: #662549;
+    --color-four: #ae445a; 
+    --color-five: #f39f5a;  
+    --color-six: #e8bcb9; 
 }
 
-
+/* diseno del navbar */
 header {
     position: fixed;
     top: 0;
@@ -20,84 +20,6 @@ header {
     z-index: 999;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-
-
-
-.carrito-desplegable ul li {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 0;
-    border-bottom: 1px solid #ddd;
-    align-items: center;
-}
-
-.boton-eliminar {
-    background-color: #ff4d4d;
-    color: white;
-    border: none;
-    padding: 5px;
-    cursor: pointer;
-    margin-left: 10px;
-}
-
-.boton-finalizar {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 10px;
-    width: 100%;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.boton-finalizar:hover,
-.boton-eliminar:hover {
-    opacity: 0.8;
-}
-
-
-
-
-.carrito-desplegable {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: white;
-    border: 1px solid #ccc;
-    padding: 10px;
-    width: 300px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-}
-
-.carrito-desplegable h4 {
-    margin-top: 0;
-}
-
-.carrito-desplegable ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.carrito-desplegable ul li {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 0;
-    border-bottom: 1px solid #ddd;
-}
-
-#total-carrito {
-    text-align: right;
-    font-weight: bold;
-}
-
-
-
-
-
-
-
 
 .logo img {
     width: 50px;
@@ -196,7 +118,74 @@ header {
 .nav-item a:hover {
     color: var(--color-five);
 }
+/* carrito de compra */
+.carrito-desplegable ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+}
 
+.boton-eliminar {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.boton-finalizar {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.boton-finalizar:hover,
+.boton-eliminar:hover {
+    opacity: 0.8;
+}
+
+.carrito-desplegable {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.carrito-desplegable h4 {
+    margin-top: 0;
+}
+
+.carrito-desplegable ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.carrito-desplegable ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#total-carrito {
+    text-align: right;
+    font-weight: bold;
+}
+
+/* diseno de footer */
 .footer {
     background-color: var(--color-one);
     color: var(--color-six);
@@ -269,6 +258,7 @@ header {
 .footer-section a i {
     margin-right: 8px;
 }
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .menu {
