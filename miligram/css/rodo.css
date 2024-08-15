@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
-:root{
+
+:root {
     --color-one: #1d1a39;
     --color-two: #451952;
     --color-three: #662549;
@@ -9,25 +10,20 @@
     --color-six: #e8bcb9;
 }
 
-.prueba .column{
+.prueba .column {
     border: solid black;
 }
 
-.nosotros {  
+.nosotros {
     display: flex;
     padding: 2%;
-
 }
-
 
 .nosotros-texto {
     font-family: "Montserrat", sans-serif;
     margin: 1%;
     color: var(--color-two);
-    
-
 }
-
 
 .carousel {
     display: flex;
@@ -36,7 +32,7 @@
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-
+    width: 750px;
     
 }
 
@@ -97,8 +93,8 @@
     font-family: "Montserrat", sans-serif;
     gap: 5%;
     padding: 2%;
-    
 } 
+
 .linea-divisoria {
     width: 100%;
     height: 2px; 
@@ -120,21 +116,42 @@
      1px  1px 0 #ffffff;
 }
 
-@media (max-width: 1024px) {
+/* Media Queries para Diseño Responsive */
+
+@media (max-width: 1600px) {
+    .nosotros{
+        flex-direction: column;
+    }
+
     .carousel {
-        display: flex;
+        width: 850px;
+    }
+
+}
+
+
+@media (max-width: 1100px) {
+    .nosotros, .objetivo{
+        flex-direction: column;
+    }
+    .carousel {
+        width: 600px;
+    }
+
+    .meta {
+        flex-direction: column-reverse;
     }
 }
 
-@media (max-width: 768px) {
-    .carousel {
-        display: flex;
+@media (max-width: 640px) {
+    .nosotros, .objetivo {
+        flex-direction: column;   
     }
-}
-
-@media (max-width: 480px) {
     .carousel {
-        display: flex;   
+        width: 330px;
     }
+    .meta {
+        flex-direction: column-reverse;
+    }
+    
 }
-

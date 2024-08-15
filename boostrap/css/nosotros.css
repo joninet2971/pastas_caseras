@@ -27,7 +27,7 @@
   
 }
 .carousel-item img {
-    max-width: 80%; /* Ajusta el tamaño de la imagen si es necesario */
+    max-width: 80%; 
     height: auto;
 }
 .carousel-item .content {
@@ -40,5 +40,5 @@
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
-    background-color:#e8bcb9ab; /* Cambiar el color de fondo al pasar el mouse */
+    background-color:#e8bcb9ab; 
 }

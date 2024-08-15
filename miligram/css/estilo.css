@@ -13,9 +13,11 @@ body, html {
     margin: 0;
     padding: 0;
 }
-.contenedora {
+
+.container {
     background-color: var(--color-six);
-    width: 100%; 
+    max-width: 2500px; /* Ancho máximo */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
 }
 
 @keyframes move {

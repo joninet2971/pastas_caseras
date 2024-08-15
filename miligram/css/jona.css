@@ -10,6 +10,11 @@
     --color-seven: rgba(252, 232, 197, 0.824);
 }
 
+.productos-destacados {
+    display: flex;
+    justify-content: center;
+}
+
 .productos-destacados .productos {
     padding: 40px 40px 40px 40px;
 }
@@ -178,6 +183,10 @@
 }
 
 /* combos */
+.productos-destacados-ofertas {
+    display: flex;
+    justify-content: center;
+}
 
 .productos-destacados-ofertas .productos {
     padding: 40px 40px 40px 40px;
