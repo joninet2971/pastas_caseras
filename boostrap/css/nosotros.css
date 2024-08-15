@@ -22,7 +22,7 @@
 
 .carousel-item {
     padding: 3%;
-    box-shadow: 0 2px 16px rgba(88, 0, 0, 0.9);
+    box-shadow: 0 2px 16px rgba(88, 0, 0, 0.719);
     background-color: var(--color-seven);
   
 }
@@ -40,5 +40,5 @@
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
-    background-color: var(--color-four); /* Cambiar el color de fondo al pasar el mouse */
+    background-color:#e8bcb9ab; /* Cambiar el color de fondo al pasar el mouse */
 }
