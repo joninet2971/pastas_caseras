@@ -57,6 +57,6 @@ document.getElementById('formularioRegistro').addEventListener('submit', functio
         localStorage.setItem('usuarios', JSON.stringify(usuarios));
         alert('Usuario registrado exitosamente.');
         document.getElementById('formularioRegistro').reset();
-        window.location.href = '../index.html';
+        window.location.href = '../miligram/index.html';
     }
 });

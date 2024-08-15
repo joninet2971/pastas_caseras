@@ -11,7 +11,7 @@ document.getElementById('formularioInicioSesion').addEventListener('submit', fun
         sessionStorage.setItem('usuarioActual', JSON.stringify({ usuario }));
         alert('Inicio de sesión exitoso.');
         document.getElementById('formularioInicioSesion').reset();
-        window.location.href = '../index.html';
+        window.location.href = '../miligram/index.html';
 
 
 
