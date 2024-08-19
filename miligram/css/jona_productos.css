@@ -132,7 +132,6 @@
     background-color: white;
     color: var(--color-one);
     text-align: center;
-    -moz-appearance: textfield;
     height: 100%;
     box-sizing: border-box;
 }

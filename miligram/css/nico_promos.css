@@ -7,18 +7,6 @@
     --color-six: #e8bcb9;
 }
 
-body, html {
-    color: black;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.contenedora {
-    background-color: var(--color-six);
-    width: 100%;
-}
-
 .promociones h2{
     font-family: "Montserrat", sans-serif;
     color: var(--color-two);
