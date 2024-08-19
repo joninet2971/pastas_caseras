@@ -51,6 +51,7 @@
     height: 100%;
     display: block;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .carousel-controls {
