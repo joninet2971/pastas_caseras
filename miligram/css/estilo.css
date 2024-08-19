@@ -36,11 +36,12 @@ body, html {
     width: 100%; /* Ancho total */
     height: 100%; /* Alto total */
     overflow: auto; /* Habilita el scroll si es necesario */
-    background-color: rgba(0,0,0,0.4); /* Fondo negro con opacidad */
+    background-color: rgba(0, 0, 0, 0.551); /* Fondo negro con opacidad */
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background-color: var(--color-four);
+    color: var(--color-one);
     margin: 15% auto; /* Centrando vertical y horizontalmente */
     padding: 20px;
     border: 1px solid #888;
