@@ -8,11 +8,18 @@
     --color-four: #ae445a;
     --color-five: #f39f5a;
     --color-six: #e8bcb9;
+    --color-seven: rgba(252, 232, 197, 0.824);
 }
 .card {
     transition: transform 0.3s ease;
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
+    background-color: var(--color-seven);
+}
+
+.container-fluid h2 {
+    font-family: "Montserrat", sans-serif;
+    color: var(--color-two);
 }
 
 .card:hover {
