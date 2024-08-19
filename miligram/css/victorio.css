@@ -118,71 +118,44 @@ header {
 .nav-item a:hover {
     color: var(--color-five);
 }
-/* carrito de compra */
-.carrito-desplegable ul li {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 0;
-    border-bottom: 1px solid #ddd;
-    align-items: center;
-}
-
-.boton-eliminar {
-    background-color: #ff4d4d;
-    color: white;
-    border: none;
-    padding: 5px;
-    cursor: pointer;
-    margin-left: 10px;
-}
-
+/* Estilos para el botón finalizar */
 .boton-finalizar {
     background-color: #28a745;
-    color: white;
+    color: var(--color-one);
     border: none;
-    padding: 10px;
-    width: 100%;
+    border-radius: 4px;
+    padding: 12px 0; 
     cursor: pointer;
-    margin-top: 10px;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+    display: block;
+    width: calc(100% - 20px); 
+    margin: 15px auto 0;
+    text-align: center; 
+    line-height: 1.5; 
 }
 
-.boton-finalizar:hover,
-.boton-eliminar:hover {
-    opacity: 0.8;
+.boton-finalizar:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
 }
 
+/* Ajustes de diseño */
 .carrito-desplegable {
     position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: white;
-    border: 1px solid #ccc;
-    padding: 10px;
-    width: 300px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    top: 100%; 
+    right: 20px; 
+    background-color: var(--color-four);
+    color: var(--color-one);
+    border-radius: 8px;
+    padding: 15px;
+    width: 320px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     z-index: 1000;
-}
-
-.carrito-desplegable h4 {
-    margin-top: 0;
-}
-
-.carrito-desplegable ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.carrito-desplegable ul li {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 0;
-    border-bottom: 1px solid #ddd;
-}
-
-#total-carrito {
-    text-align: right;
-    font-weight: bold;
+    display: none; 
+    max-height: 400px;
+    overflow-y: auto;
+    box-sizing: border-box;
 }
 
 /* diseno de footer */
