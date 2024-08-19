@@ -14,8 +14,8 @@
 
 
 .carousel-inner img {
-    width: 100%;
-    height: 100%;  
+    width: 90%;
+    height: 90%;  
 }
 
 .carousel-item {
@@ -30,7 +30,6 @@
 
 
 .objetivo, .meta {
-    font-size: 30px;
     font-family: "Montserrat", sans-serif;    
 } 
 
