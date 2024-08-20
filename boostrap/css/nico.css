@@ -8,9 +8,10 @@
   }
   
   .container-fluid {
-  padding-top: 3em;
+  padding-top: 2em;
   
   }
+  
   .image-overlay {
   position: sticky;
   text-align: center;
@@ -19,6 +20,7 @@
   .image-overlay img {
   width: 100%;
   height: auto;
+
   }
   .overlay-text {
   position:absolute;
@@ -29,6 +31,7 @@
   }
   
   .overlay-text h1 {
+  margin-top: 5%;
   background-color: var(--color-four); 
   border-radius: 10px; 
   padding: 10px; 
@@ -37,12 +40,12 @@
   display: inline-block; 
   text-shadow: 2px 2px 4px var(--color-one);
   font-family: 'Great Vibes', cursive;
-  border: var(--color-one) solid 2px;
+  box-shadow: 0 2px 16px rgba(88, 0, 0, 0.9); 
   animation: move 7s infinite;
   }
   
   .overlay-text h3 {
-  margin-top: 40px;
+  margin-top: 4%;
   text-shadow: 2px 2px 4px var(--color-one);
   font-family: "Dosis", sans-serif;
   font-size: 2vw;
