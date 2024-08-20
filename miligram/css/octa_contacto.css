@@ -10,7 +10,7 @@
     --color-seven: rgba(252, 232, 197, 0.824);
 }
 .contenedora {
-    overflow-x: hidden; /* Evitar el desbordamiento horizontal solo en este contenedor */
+    overflow-x: hidden; 
 }
 .contacto {
     display: flex;

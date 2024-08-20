@@ -8,20 +8,20 @@
     --color-five: #f39f5a; 
     --color-six: #e8bcb9; 
 }
-/* ajuste de color y letra del navbar */
+
 .navbar{
     background-color: var(--color-four) !important;
     font-family: 'Montserrat', sans-serif;
 }
-/* Efecto de línea debajo de cada enlace del navbar */
+
 .navbar-nav .nav-link {
-    position: relative;
+    position: sticky;
     overflow: hidden;
 }
 
 .navbar-nav .nav-link::after {
     content: "";
-    position: absolute;
+    position: sticky;
     left: 0;
     bottom: 0;
     width: 100%;

@@ -12,7 +12,7 @@
   
   }
   .image-overlay {
-  position: relative;
+  position: sticky;
   text-align: center;
   color: white;
   }

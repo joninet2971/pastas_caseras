@@ -28,24 +28,24 @@ body, html {
 
 
 .modal {
-    display: none; /* Oculto por defecto */
-    position: fixed; /* Fijo al fondo de la pantalla */
-    z-index: 1; /* Aparece por encima del resto */
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
     left: 0;
     top: 0;
-    width: 100%; /* Ancho total */
-    height: 100%; /* Alto total */
-    overflow: auto; /* Habilita el scroll si es necesario */
-    background-color: rgba(0, 0, 0, 0.551); /* Fondo negro con opacidad */
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.551); 
 }
 
 .modal-content {
     background-color: var(--color-four);
     color: var(--color-one);
-    margin: 15% auto; /* Centrando vertical y horizontalmente */
+    margin: 15% auto; 
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Ancho del contenido */
+    width: 80%; 
 }
 
 .close {
