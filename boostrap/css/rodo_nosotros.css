@@ -37,8 +37,16 @@
     margin-top: 0;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 50px;
+    height: 50px;
+    background-size: 100%;
+ 
+}
+
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
-    background-color:#e8bcb9ab; 
+    background-color:#e8bcb9c7; 
 }
